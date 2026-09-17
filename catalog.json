@@ -26,6 +26,12 @@
       "campaign_id": "CAMPAIGN-001",
       "dataset_count": 5,
       "published_at": "2026-09-17"
+    },
+    {
+      "batch_id": "CAMPAIGN-001-wave-005",
+      "campaign_id": "CAMPAIGN-001",
+      "dataset_count": 10,
+      "published_at": "2026-09-17"
     }
   ],
   "datasets": [
@@ -5682,7 +5688,2113 @@
           "evidence_url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-BIAD2208"
         }
       ]
+    },
+    {
+      "id": "ds_campaign001_lit_jackson2020_imc",
+      "source_candidate_id": "campaign001_lit_jackson2020_imc",
+      "canonical_group_id": "cg_jackson2020",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "Jackson 2020 — IMC",
+      "accession": "4607374",
+      "technology": "IMC",
+      "platform_family": "IMC",
+      "platform_assay": "IMC",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": null,
+      "files": 5,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "Zenodo",
+      "updated": "2026-09-17",
+      "description": "Jackson 2020 — IMC. Images, segmentation masks, cell metadata and separately supplied cell locations.",
+      "publications": [
+        {
+          "title": "The single-cell pathology landscape of breast cancer",
+          "year": 2020,
+          "journal": "Nature",
+          "doi": "10.1038/s41586-019-1876-x",
+          "pmid": null,
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1038/s41586-019-1876-x",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "accession": "4607374",
+          "url": "https://zenodo.org/records/4607374",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "singlecell_cluster_labels.zip",
+          "url": "https://zenodo.org/api/records/4607374/files/singlecell_cluster_labels.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 7888794,
+          "http_status": null
+        },
+        {
+          "label": "TumorStroma_masks.zip",
+          "url": "https://zenodo.org/api/records/4607374/files/TumorStroma_masks.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 6959435,
+          "http_status": null
+        },
+        {
+          "label": "SingleCell_and_Metadata.zip",
+          "url": "https://zenodo.org/api/records/4607374/files/SingleCell_and_Metadata.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 36847453483,
+          "http_status": null
+        },
+        {
+          "label": "singlecell_locations.zip",
+          "url": "https://zenodo.org/api/records/4607374/files/singlecell_locations.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 23191397,
+          "http_status": null
+        },
+        {
+          "label": "OMEandSingleCellMasks.zip",
+          "url": "https://zenodo.org/api/records/4607374/files/OMEandSingleCellMasks.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 11378839881,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial proteomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and available data",
+          "value": "Images, segmentation masks, cell metadata and separately supplied cell locations.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/4607374"
+        },
+        {
+          "label": "File verification",
+          "value": "Public API file inventory checked. Data archive contents and full sample mapping have not been validated; completeness remains unverified (Grade C).",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/4607374"
+        },
+        {
+          "label": "Curation limitations",
+          "value": "Check cohort and patient counts from metadata; group version 3518284 with 4607374. File inventory verified; large data archives not downloaded or tested. Complete publication metadata and sample-level validation before publication.",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1038/s41586-019-1876-x"
+        },
+        {
+          "label": "Repository versions",
+          "value": "Requested record https://zenodo.org/records/4607374; resolved record 4607374. Versions and reprocessed copies are not independent cohorts.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/4607374"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_lit_danenberg2022_imc",
+      "source_candidate_id": "campaign001_lit_danenberg2022_imc",
+      "canonical_group_id": "cg_danenberg2022",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "Danenberg 2022 — IMC",
+      "accession": "6036188",
+      "technology": "IMC",
+      "platform_family": "IMC",
+      "platform_assay": "IMC",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": null,
+      "files": 1,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "Zenodo",
+      "updated": "2026-09-17",
+      "description": "Danenberg 2022 — IMC. 693 patients reported in paper; repository documents images, masks, SingleCells.csv and CellNeighbours.csv.",
+      "publications": [
+        {
+          "title": "Breast tumor microenvironment structures are associated with genomic features and clinical outcome",
+          "year": 2022,
+          "journal": "Nature Genetics",
+          "doi": "10.1038/s41588-022-01041-y",
+          "pmid": null,
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1038/s41588-022-01041-y",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "accession": "6036188",
+          "url": "https://zenodo.org/records/6036188",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "MBTMEStrIMCPublic.zip",
+          "url": "https://zenodo.org/api/records/6036188/files/MBTMEStrIMCPublic.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 6650249371,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial proteomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and available data",
+          "value": "693 patients reported in paper; repository documents images, masks, SingleCells.csv and CellNeighbours.csv.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/6036188"
+        },
+        {
+          "label": "File verification",
+          "value": "Public API file inventory checked. Data archive contents and full sample mapping have not been validated; completeness remains unverified (Grade C).",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/6036188"
+        },
+        {
+          "label": "Curation limitations",
+          "value": "METABRIC cohort may overlap other METABRIC publications; do not sum patients across papers. File inventory verified; large data archives not downloaded or tested. Complete publication metadata and sample-level validation before publication.",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1038/s41588-022-01041-y"
+        },
+        {
+          "label": "Repository versions",
+          "value": "Requested record https://zenodo.org/records/6036188; resolved record 6036188. Versions and reprocessed copies are not independent cohorts.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/6036188"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_lit_her2st2021_st",
+      "source_candidate_id": "campaign001_lit_her2st2021_st",
+      "canonical_group_id": "cg_her2st2021",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "Andersson 2021 / HER2ST — Spatial Transcriptomics (original ST)",
+      "accession": "4751624",
+      "technology": "Spatial Transcriptomics (original ST)",
+      "platform_family": "Spatial Transcriptomics (original ST)",
+      "platform_assay": "Spatial Transcriptomics (original ST)",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": 36,
+      "files": 5,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "Zenodo",
+      "updated": "2026-09-17",
+      "description": "Andersson 2021 / HER2ST — Spatial Transcriptomics (original ST). 8 HER2-positive patients, 36 sections reported in paper; counts, images, spot mapping and metadata listed.",
+      "publications": [
+        {
+          "title": "Spatial deconvolution of HER2-positive breast cancer delineates tumor-associated cell type interactions",
+          "year": 2021,
+          "journal": "Nature Communications",
+          "doi": "10.1038/s41467-021-26271-2",
+          "pmid": null,
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1038/s41467-021-26271-2",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "accession": "4751624",
+          "url": "https://zenodo.org/records/4751624",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "images.zip",
+          "url": "https://zenodo.org/api/records/4751624/files/images.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 592058207,
+          "http_status": null
+        },
+        {
+          "label": "meta.zip",
+          "url": "https://zenodo.org/api/records/4751624/files/meta.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 62598,
+          "http_status": null
+        },
+        {
+          "label": "code.zip",
+          "url": "https://zenodo.org/api/records/4751624/files/code.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 996917444,
+          "http_status": null
+        },
+        {
+          "label": "count-matrices.zip",
+          "url": "https://zenodo.org/api/records/4751624/files/count-matrices.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 37242266,
+          "http_status": null
+        },
+        {
+          "label": "spot-selections.zip",
+          "url": "https://zenodo.org/api/records/4751624/files/spot-selections.zip/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 212185,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and available data",
+          "value": "8 HER2-positive patients, 36 sections reported in paper; counts, images, spot mapping and metadata listed.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/4751624"
+        },
+        {
+          "label": "File verification",
+          "value": "Public API file inventory checked. Data archive contents and full sample mapping have not been validated; completeness remains unverified (Grade C).",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/4751624"
+        },
+        {
+          "label": "Curation limitations",
+          "value": "Original ST, not automatically 10x Visium. Group earlier Zenodo 3957257 with this study; external Wu scRNA reference is already catalogued. File inventory verified; large data archives not downloaded or tested. Complete publication metadata and sample-level validation before publication.",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1038/s41467-021-26271-2"
+        },
+        {
+          "label": "Repository versions",
+          "value": "Requested record https://zenodo.org/records/4751624; resolved record 4751624. Versions and reprocessed copies are not independent cohorts.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/4751624"
+        },
+        {
+          "label": "Sample count unit",
+          "value": "36 sections from 8 patients; not 36 patients.",
+          "status": "verified",
+          "evidence_url": "https://doi.org/10.1038/s41467-021-26271-2"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_lit_tnbc2024_st",
+      "source_candidate_id": "campaign001_lit_tnbc2024_st",
+      "canonical_group_id": "cg_tnbc2024",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "TNBC spatial archetypes 2024 — Spatial Transcriptomics (version requires curation)",
+      "accession": "14204217",
+      "technology": "Spatial Transcriptomics (version requires curation)",
+      "platform_family": "Spatial Transcriptomics (version requires curation)",
+      "platform_assay": "Spatial Transcriptomics (version requires curation)",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": null,
+      "files": 16,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "Zenodo",
+      "updated": "2026-09-17",
+      "description": "TNBC spatial archetypes 2024 — Spatial Transcriptomics (version requires curation). 92 analyzed patients in published paper; public counts, H&E, clinical tables and spatial objects. Downloaded repository README confirms per-array spot positions.",
+      "publications": [
+        {
+          "title": "Spatial transcriptomics reveals substantial heterogeneity in triple-negative breast cancer with potential clinical implications",
+          "year": 2024,
+          "journal": "Nature Communications",
+          "doi": "10.1038/s41467-024-54145-w",
+          "pmid": null,
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1038/s41467-024-54145-w",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "accession": "14204217",
+          "url": "https://zenodo.org/records/14204217",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "external datasets_ipwfv.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/external%20datasets_ipwfv.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 564981760,
+          "http_status": null
+        },
+        {
+          "label": "projections.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/projections.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1499667517,
+          "http_status": null
+        },
+        {
+          "label": "README.md",
+          "url": "https://zenodo.org/api/records/14204217/files/README.md/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 8848,
+          "http_status": null
+        },
+        {
+          "label": "Clinical.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/Clinical.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 64000,
+          "http_status": null
+        },
+        {
+          "label": "classification.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/classification.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1454316032,
+          "http_status": null
+        },
+        {
+          "label": "PB_count.RDS",
+          "url": "https://zenodo.org/api/records/14204217/files/PB_count.RDS/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 6617464,
+          "http_status": null
+        },
+        {
+          "label": "Images.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/Images.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 25305427456,
+          "http_status": null
+        },
+        {
+          "label": "Robjects.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/Robjects.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 3303393280,
+          "http_status": null
+        },
+        {
+          "label": "bulk_count.RDS",
+          "url": "https://zenodo.org/api/records/14204217/files/bulk_count.RDS/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 8408855,
+          "http_status": null
+        },
+        {
+          "label": "byArray.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/byArray.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 7444531200,
+          "http_status": null
+        },
+        {
+          "label": "deconvolution.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/deconvolution.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 699509760,
+          "http_status": null
+        },
+        {
+          "label": "misc.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/misc.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 14337536,
+          "http_status": null
+        },
+        {
+          "label": "Images IHC.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/Images%20IHC.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 15280775168,
+          "http_status": null
+        },
+        {
+          "label": "rawCountsMatrices.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/rawCountsMatrices.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1362405376,
+          "http_status": null
+        },
+        {
+          "label": "patches.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/patches.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1050112,
+          "http_status": null
+        },
+        {
+          "label": "clustering.tar",
+          "url": "https://zenodo.org/api/records/14204217/files/clustering.tar/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1077099008,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and available data",
+          "value": "92 analyzed patients in published paper; public counts, H&E, clinical tables and spatial objects. Downloaded repository README confirms per-array spot positions.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/8135721"
+        },
+        {
+          "label": "File verification",
+          "value": "Public API file inventory checked. Data archive contents and full sample mapping have not been validated; completeness remains unverified (Grade C).",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/8135721"
+        },
+        {
+          "label": "Curation limitations",
+          "value": "Raw EGA restricted; processed files public. Exclude external validation datasets from counts of newly generated cohorts. File inventory verified; large data archives not downloaded or tested. Complete publication metadata and sample-level validation before publication.",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1038/s41467-024-54145-w"
+        },
+        {
+          "label": "Repository versions",
+          "value": "Requested record https://zenodo.org/records/8135721; resolved record 14204217. Versions and reprocessed copies are not independent cohorts.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/8135721"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_lit_zhu2025_st",
+      "source_candidate_id": "campaign001_lit_zhu2025_st",
+      "canonical_group_id": "cg_zhu2025",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "Zhu 2025 / Visium — 10x Visium",
+      "accession": "15252874",
+      "technology": "10x Visium",
+      "platform_family": "10x Visium",
+      "platform_assay": "10x Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": null,
+      "files": 2,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "Zenodo",
+      "updated": "2026-09-17",
+      "description": "Zhu 2025 / Visium — 10x Visium. Public Visium archives and Georgia validation archive listed.",
+      "publications": [
+        {
+          "title": "Integrative spatial omics reveals distinct tumor-promoting multicellular niches and immunosuppressive mechanisms in Black American and White American patients with TNBC",
+          "year": 2025,
+          "journal": "Nature Communications",
+          "doi": "10.1038/s41467-025-61034-3",
+          "pmid": null,
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1038/s41467-025-61034-3",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "accession": "15252874",
+          "url": "https://zenodo.org/records/15252874",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "10x.visium.tar.gz",
+          "url": "https://zenodo.org/api/records/15252874/files/10x.visium.tar.gz/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 2295846195,
+          "http_status": null
+        },
+        {
+          "label": "georgia.validation.visium.tar.gz",
+          "url": "https://zenodo.org/api/records/15252874/files/georgia.validation.visium.tar.gz/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 52837135,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and available data",
+          "value": "Public Visium archives and Georgia validation archive listed.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/12797059"
+        },
+        {
+          "label": "File verification",
+          "value": "Public API file inventory checked. Data archive contents and full sample mapping have not been validated; completeness remains unverified (Grade C).",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/12797059"
+        },
+        {
+          "label": "Curation limitations",
+          "value": "GSM_giotto_processed.tar.gz includes reused Bassiouni data; resolve original accessions and cohort overlap before publishing. File inventory verified; large data archives not downloaded or tested. Complete publication metadata and sample-level validation before publication.",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1038/s41467-025-61034-3"
+        },
+        {
+          "label": "Repository versions",
+          "value": "Requested record https://zenodo.org/records/12797059; resolved record 15252874. Versions and reprocessed copies are not independent cohorts.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/12797059"
+        },
+        {
+          "label": "Reused Bassiouni cohort",
+          "value": "GSM_giotto_processed.tar.gz excluded from access links for the newly generated Visium cohort; trace reused data to GSE210616 and verify sample overlap.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210616"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_lit_zhu2025_geomx",
+      "source_candidate_id": "campaign001_lit_zhu2025_geomx",
+      "canonical_group_id": "cg_zhu2025",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "Zhu 2025 / GeoMx — GeoMx WTA",
+      "accession": "12752405",
+      "technology": "GeoMx WTA",
+      "platform_family": "GeoMx WTA",
+      "platform_assay": "GeoMx WTA",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": null,
+      "files": 3,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "Zenodo",
+      "updated": "2026-09-17",
+      "description": "Zhu 2025 / GeoMx — GeoMx WTA. Public expression workbook, metadata workbook and panel file listed; repository describes 57 tissues from 26 BA and 31 WA patients.",
+      "publications": [
+        {
+          "title": "Integrative spatial omics reveals distinct tumor-promoting multicellular niches and immunosuppressive mechanisms in Black American and White American patients with TNBC",
+          "year": 2025,
+          "journal": "Nature Communications",
+          "doi": "10.1038/s41467-025-61034-3",
+          "pmid": null,
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1038/s41467-025-61034-3",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "accession": "12752405",
+          "url": "https://zenodo.org/records/12752405",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Meta_Data_Nanostring_GeoMx DSP_TNBC_Data.xlsx",
+          "url": "https://zenodo.org/api/records/12752405/files/Meta_Data_Nanostring_GeoMx%20DSP_TNBC_Data.xlsx/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 20628,
+          "http_status": null
+        },
+        {
+          "label": "Nanostring_GeoMx DSP_TNBC_Data.xlsx",
+          "url": "https://zenodo.org/api/records/12752405/files/Nanostring_GeoMx%20DSP_TNBC_Data.xlsx/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 26179876,
+          "http_status": null
+        },
+        {
+          "label": "Hs_R_NGS_WTA_v1.0.pkc",
+          "url": "https://zenodo.org/api/records/12752405/files/Hs_R_NGS_WTA_v1.0.pkc/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 16005573,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and available data",
+          "value": "Public expression workbook, metadata workbook and panel file listed; repository describes 57 tissues from 26 BA and 31 WA patients.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/12752405"
+        },
+        {
+          "label": "File verification",
+          "value": "Public API file inventory checked. Data archive contents and full sample mapping have not been validated; completeness remains unverified (Grade C).",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/12752405"
+        },
+        {
+          "label": "Curation limitations",
+          "value": "Inspect ROI-to-sample mapping in workbook; reconcile assay-specific counts with paper, do not equate all assay cohorts. File inventory verified; large data archives not downloaded or tested. Complete publication metadata and sample-level validation before publication.",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1038/s41467-025-61034-3"
+        },
+        {
+          "label": "Repository versions",
+          "value": "Requested record https://zenodo.org/records/12752405; resolved record 12752405. Versions and reprocessed copies are not independent cohorts.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/12752405"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_lit_zhu2025_imc",
+      "source_candidate_id": "campaign001_lit_zhu2025_imc",
+      "canonical_group_id": "cg_zhu2025",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "Zhu 2025 / IMC — IMC",
+      "accession": "15242478",
+      "technology": "IMC",
+      "platform_family": "IMC",
+      "platform_assay": "IMC",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": null,
+      "files": 38,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "Zenodo",
+      "updated": "2026-09-17",
+      "description": "Zhu 2025 / IMC — IMC. Repository describes three cohorts, expression tables, centroid coordinates, Giotto objects and raw MCD images.",
+      "publications": [
+        {
+          "title": "Integrative spatial omics reveals distinct tumor-promoting multicellular niches and immunosuppressive mechanisms in Black American and White American patients with TNBC",
+          "year": 2025,
+          "journal": "Nature Communications",
+          "doi": "10.1038/s41467-025-61034-3",
+          "pmid": null,
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1038/s41467-025-61034-3",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "accession": "15242478",
+          "url": "https://zenodo.org/records/15242478",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "TMA-1.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/TMA-1.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1102456230,
+          "http_status": null
+        },
+        {
+          "label": "T10-AA2.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T10-AA2.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 913849991,
+          "http_status": null
+        },
+        {
+          "label": "TMA-6.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/TMA-6.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 771408566,
+          "http_status": null
+        },
+        {
+          "label": "TMA-10.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/TMA-10.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1468359604,
+          "http_status": null
+        },
+        {
+          "label": "T6-EA6.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T6-EA6.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1115010539,
+          "http_status": null
+        },
+        {
+          "label": "T2-EA2.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T2-EA2.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1357697099,
+          "http_status": null
+        },
+        {
+          "label": "TMA-8.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/TMA-8.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1604909010,
+          "http_status": null
+        },
+        {
+          "label": "T7-EA7.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T7-EA7.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1055194016,
+          "http_status": null
+        },
+        {
+          "label": "TMA-9.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/TMA-9.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1572426429,
+          "http_status": null
+        },
+        {
+          "label": "T14-AA6.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T14-AA6.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1030715812,
+          "http_status": null
+        },
+        {
+          "label": "TMA-2.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/TMA-2.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 985416515,
+          "http_status": null
+        },
+        {
+          "label": "B1Ca57b.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/B1Ca57b.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 2127158752,
+          "http_status": null
+        },
+        {
+          "label": "TMA-7.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/TMA-7.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1055192139,
+          "http_status": null
+        },
+        {
+          "label": "T1-EA1.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T1-EA1.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1108153295,
+          "http_status": null
+        },
+        {
+          "label": "B1Ca71b.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/B1Ca71b.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 3163483488,
+          "http_status": null
+        },
+        {
+          "label": "TMA-4.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/TMA-4.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 409085359,
+          "http_status": null
+        },
+        {
+          "label": "T9-AA1.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T9-AA1.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1153403256,
+          "http_status": null
+        },
+        {
+          "label": "T16-AA8.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T16-AA8.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1012080230,
+          "http_status": null
+        },
+        {
+          "label": "T5-EA5.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T5-EA5.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1083920442,
+          "http_status": null
+        },
+        {
+          "label": "T17-AA9.mcd",
+          "url": "https://zenodo.org/api/records/15242478/files/T17-AA9.mcd/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1063161255,
+          "http_status": null
+        },
+        {
+          "label": "cytof_test.aug13.RData",
+          "url": "https://zenodo.org/api/records/15242478/files/cytof_test.aug13.RData/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 144043012,
+          "http_status": null
+        },
+        {
+          "label": "bsw_discovery_cytof_test.RData",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_discovery_cytof_test.RData/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 144043012,
+          "http_status": null
+        },
+        {
+          "label": "GSM_giotto_processed.tar.gz",
+          "url": "https://zenodo.org/api/records/15242478/files/GSM_giotto_processed.tar.gz/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1460939288,
+          "http_status": null
+        },
+        {
+          "label": "roswell.cell.centroid.txt",
+          "url": "https://zenodo.org/api/records/15242478/files/roswell.cell.centroid.txt/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 7343113,
+          "http_status": null
+        },
+        {
+          "label": "cytof_test.RData",
+          "url": "https://zenodo.org/api/records/15242478/files/cytof_test.RData/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 69705341,
+          "http_status": null
+        },
+        {
+          "label": "bsw_validation_processing.R",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_validation_processing.R/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 734,
+          "http_status": null
+        },
+        {
+          "label": "roswell_deepcell.RDS",
+          "url": "https://zenodo.org/api/records/15242478/files/roswell_deepcell.RDS/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 107915674,
+          "http_status": null
+        },
+        {
+          "label": "roswell.processing.R",
+          "url": "https://zenodo.org/api/records/15242478/files/roswell.processing.R/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 445,
+          "http_status": null
+        },
+        {
+          "label": "bsw_discovery_processing.R",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_discovery_processing.R/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 1236,
+          "http_status": null
+        },
+        {
+          "label": "bsw_discovery_zscored_expr.txt",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_discovery_zscored_expr.txt/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 69051999,
+          "http_status": null
+        },
+        {
+          "label": "Roswell.excluded.ROI.txt",
+          "url": "https://zenodo.org/api/records/15242478/files/Roswell.excluded.ROI.txt/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 786,
+          "http_status": null
+        },
+        {
+          "label": "bsw_validation_deepCell.RDS",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_validation_deepCell.RDS/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 184720179,
+          "http_status": null
+        },
+        {
+          "label": "roswell.raw.expr.txt",
+          "url": "https://zenodo.org/api/records/15242478/files/roswell.raw.expr.txt/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 85763548,
+          "http_status": null
+        },
+        {
+          "label": "bsw_discovery_cell_centroid.txt",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_discovery_cell_centroid.txt/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 13116336,
+          "http_status": null
+        },
+        {
+          "label": "bsw_validation_raw_expr.txt",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_validation_raw_expr.txt/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 147152580,
+          "http_status": null
+        },
+        {
+          "label": "bsw_validation_panel.csv",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_validation_panel.csv/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 824,
+          "http_status": null
+        },
+        {
+          "label": "bsw_validation_cell_centroid.txt",
+          "url": "https://zenodo.org/api/records/15242478/files/bsw_validation_cell_centroid.txt/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 14105115,
+          "http_status": null
+        },
+        {
+          "label": "roswell_panel.csv",
+          "url": "https://zenodo.org/api/records/15242478/files/roswell_panel.csv/content",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 838,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial proteomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and available data",
+          "value": "Repository describes three cohorts, expression tables, centroid coordinates, Giotto objects and raw MCD images.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/15115492"
+        },
+        {
+          "label": "File verification",
+          "value": "Public API file inventory checked. Data archive contents and full sample mapping have not been validated; completeness remains unverified (Grade C).",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/15115492"
+        },
+        {
+          "label": "Curation limitations",
+          "value": "Exclude non-breast control ROIs identified in Roswell.excluded.ROI.txt; same paper as Visium/GeoMx, not three independent studies. File inventory verified; large data archives not downloaded or tested. Complete publication metadata and sample-level validation before publication.",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1038/s41467-025-61034-3"
+        },
+        {
+          "label": "Repository versions",
+          "value": "Requested record https://zenodo.org/records/15115492; resolved record 15242478. Versions and reprocessed copies are not independent cohorts.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/api/records/15115492"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_breast_gse210616",
+      "source_candidate_id": "campaign001_breast_gse210616",
+      "canonical_group_id": "cg_bassiouni2023",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "Spatial transcriptomics of triple negative breast cancer",
+      "accession": "GSE210616",
+      "technology": "10x Visium",
+      "platform_family": "10x Visium",
+      "platform_assay": "10x Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": 43,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "NCBI GEO",
+      "updated": "2026-09-17",
+      "description": "Spatial transcriptomics of triple negative breast cancer. 22 patients, 43 sections: reference 14/28; validation 8/15. Some tumors were treated with neoadjuvant therapy.",
+      "publications": [
+        {
+          "title": "Spatial Transcriptomic Analysis of a Diverse Patient Cohort Reveals a Conserved Architecture in Triple-Negative Breast Cancer",
+          "year": 2023,
+          "journal": "Cancer Research",
+          "doi": "10.1158/0008-5472.CAN-22-2682",
+          "pmid": "36283023",
+          "corresponding_authors": [
+            "John D. Carpten"
+          ],
+          "url": "https://doi.org/10.1158/0008-5472.CAN-22-2682",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "accession": "GSE210616",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210616",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE210616 complete processed archive (includes Loupe files)",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE210nnn/GSE210616/suppl/GSE210616_RAW.tar",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "GSM6433619_396D_filtered_feature_bc_matrix.h5",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6433nnn/GSM6433619/suppl/GSM6433619_396D_filtered_feature_bc_matrix.h5",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "GSM6433619_396D_scalefactors_json.json.gz",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6433nnn/GSM6433619/suppl/GSM6433619_396D_scalefactors_json.json.gz",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "GSM6433619_396D_tissue_hires_image.png.gz",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6433nnn/GSM6433619/suppl/GSM6433619_396D_tissue_hires_image.png.gz",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "GSM6433619_396D_tissue_positions_list.csv.gz",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6433nnn/GSM6433619/suppl/GSM6433619_396D_tissue_positions_list.csv.gz",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort",
+          "value": "22 patients, 43 sections: reference 14/28; validation 8/15. Some tumors were treated with neoadjuvant therapy.",
+          "status": "verified",
+          "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9812886/"
+        },
+        {
+          "label": "File verification",
+          "value": "GEO documents H5 counts, spatial coordinates, image and scale factors. Listed file contents have not been independently downloaded; completeness pending (Grade C).",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210616"
+        },
+        {
+          "label": "Raw sequencing",
+          "value": "Not deposited due to patient privacy; processed files are publicly listed.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210616"
+        },
+        {
+          "label": "Sample count unit",
+          "value": "43 tissue sections, not patients. File count below reflects linked resources, not the full archive inventory.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210616"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_heiser2023_spatial",
+      "source_candidate_id": "campaign001_heiser2023_spatial",
+      "canonical_group_id": "cg_heiser2023",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "spatial",
+      "title": "Molecular cartography uncovers evolutionary and microenvironmental dynamics in sporadic colorectal tumors — 10x Visium",
+      "accession": "OSF hftq2 / ST_master",
+      "technology": "10x Visium",
+      "platform_family": "10x Visium",
+      "platform_assay": "10x Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Colorectal",
+      "disease": "Colorectal cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Colorectal cancer",
+      "condition_classes": [
+        "tumor",
+        "disease_non_tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": null,
+      "files": 48,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "OSF",
+      "updated": "2026-09-17",
+      "description": "Molecular cartography uncovers evolutionary and microenvironmental dynamics in sporadic colorectal tumors — 10x Visium. 31 colorectal specimens reported for the spatial atlas; this is not an assay-specific patient count. Normal, precursor and cancer tissue are present; sample-level condition mapping pending.",
+      "publications": [
+        {
+          "title": "Molecular cartography uncovers evolutionary and microenvironmental dynamics in sporadic colorectal tumors",
+          "year": 2023,
+          "journal": "Cell",
+          "doi": "10.1016/j.cell.2023.11.006",
+          "pmid": "38065082",
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1016/j.cell.2023.11.006",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "OSF",
+          "accession": "OSF hftq2 / ST_master",
+          "url": "https://osf.io/hftq2/",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "8578_1_WD33474_master.h5ad",
+          "url": "https://osf.io/download/wu5y7/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 96076405,
+          "http_status": null
+        },
+        {
+          "label": "7003_1_WD87478_master.h5ad",
+          "url": "https://osf.io/download/nk6vu/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 81029507,
+          "http_status": null
+        },
+        {
+          "label": "8270_6_WD84602_master.h5ad",
+          "url": "https://osf.io/download/9z4p5/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 154175915,
+          "http_status": null
+        },
+        {
+          "label": "8578_2_WD84594_master.h5ad",
+          "url": "https://osf.io/download/wmnj8/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 101056212,
+          "http_status": null
+        },
+        {
+          "label": "8899_7_SG00004_master.h5ad",
+          "url": "https://osf.io/download/38rjh/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 123991906,
+          "http_status": null
+        },
+        {
+          "label": "8578_4_SR00001_master.h5ad",
+          "url": "https://osf.io/download/avmg2/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 128207475,
+          "http_status": null
+        },
+        {
+          "label": "8578_3_WD84596_master.h5ad",
+          "url": "https://osf.io/download/hu3n4/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 96500874,
+          "http_status": null
+        },
+        {
+          "label": "8899_4_SG00002_master.h5ad",
+          "url": "https://osf.io/download/ncwf3/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 157103228,
+          "http_status": null
+        },
+        {
+          "label": "7003_2_WD87478_master.h5ad",
+          "url": "https://osf.io/download/gh8jn/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 87509324,
+          "http_status": null
+        },
+        {
+          "label": "8270_1_HTA11_07862_master.h5ad",
+          "url": "https://osf.io/download/kep2g/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 101556950,
+          "http_status": null
+        },
+        {
+          "label": "8270_12_WD84216_master.h5ad",
+          "url": "https://osf.io/download/p3cey/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 112605271,
+          "http_status": null
+        },
+        {
+          "label": "8270_11_WD84216_master.h5ad",
+          "url": "https://osf.io/download/c6xzf/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 134950651,
+          "http_status": null
+        },
+        {
+          "label": "7003_3_WD85806_master.h5ad",
+          "url": "https://osf.io/download/8bftu/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 145369653,
+          "http_status": null
+        },
+        {
+          "label": "8578_1_WD33473_master.h5ad",
+          "url": "https://osf.io/download/zjqrh/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 89113719,
+          "http_status": null
+        },
+        {
+          "label": "8899_8_SG00004_master.h5ad",
+          "url": "https://osf.io/download/49jh6/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 100324937,
+          "http_status": null
+        },
+        {
+          "label": "8270_9_WD84594_master.h5ad",
+          "url": "https://osf.io/download/3x7nw/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 143682857,
+          "http_status": null
+        },
+        {
+          "label": "7794_2_WD33468_master.h5ad",
+          "url": "https://osf.io/download/z7nfk/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 97417346,
+          "http_status": null
+        },
+        {
+          "label": "8578_2_WD84216_master.h5ad",
+          "url": "https://osf.io/download/nuktr/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 96136022,
+          "http_status": null
+        },
+        {
+          "label": "7794_1_WD33476_master.h5ad",
+          "url": "https://osf.io/download/wr7vk/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 97502475,
+          "http_status": null
+        },
+        {
+          "label": "6723_3_WD86056_master.h5ad",
+          "url": "https://osf.io/download/vwe6d/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 91276059,
+          "http_status": null
+        },
+        {
+          "label": "8270_8_WD84596_master.h5ad",
+          "url": "https://osf.io/download/cwkxt/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 108259301,
+          "http_status": null
+        },
+        {
+          "label": "7003_8_WD87482_master.h5ad",
+          "url": "https://osf.io/download/zf6a8/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 187108521,
+          "http_status": null
+        },
+        {
+          "label": "8578_1_WD33469_master.h5ad",
+          "url": "https://osf.io/download/tsqzr/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 93789738,
+          "http_status": null
+        },
+        {
+          "label": "7794_1_WD33479_master.h5ad",
+          "url": "https://osf.io/download/fmsn4/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 97552595,
+          "http_status": null
+        },
+        {
+          "label": "8899_5_SG00003_master.h5ad",
+          "url": "https://osf.io/download/2fq4y/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 107227437,
+          "http_status": null
+        },
+        {
+          "label": "7003_6_WD87480_master.h5ad",
+          "url": "https://osf.io/download/dshcj/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 144294131,
+          "http_status": null
+        },
+        {
+          "label": "7319_2_HTA11_08622_A_master.h5ad",
+          "url": "https://osf.io/download/6u32y/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 102579565,
+          "http_status": null
+        },
+        {
+          "label": "7003_5_WD87480_master.h5ad",
+          "url": "https://osf.io/download/ch5qp/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 169412798,
+          "http_status": null
+        },
+        {
+          "label": "6723_4_WD86055_master.h5ad",
+          "url": "https://osf.io/download/hk9vy/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 149716280,
+          "http_status": null
+        },
+        {
+          "label": "8270_5_HTA11_06134_master.h5ad",
+          "url": "https://osf.io/download/7c3mb/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 88281696,
+          "http_status": null
+        },
+        {
+          "label": "8899_1_SG00001_master.h5ad",
+          "url": "https://osf.io/download/gwfr3/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 129567960,
+          "http_status": null
+        },
+        {
+          "label": "6723_1_WD86056_master.h5ad",
+          "url": "https://osf.io/download/7yk3h/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 116041406,
+          "http_status": null
+        },
+        {
+          "label": "8578_2_WD84226_master.h5ad",
+          "url": "https://osf.io/download/x8vwy/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 98087656,
+          "http_status": null
+        },
+        {
+          "label": "8899_2_SG00001_master.h5ad",
+          "url": "https://osf.io/download/vua3w/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 121144833,
+          "http_status": null
+        },
+        {
+          "label": "8899_6_SG00003_master.h5ad",
+          "url": "https://osf.io/download/ux3sv/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 125997874,
+          "http_status": null
+        },
+        {
+          "label": "7003_7_WD87482_master.h5ad",
+          "url": "https://osf.io/download/rfe2x/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 162662731,
+          "http_status": null
+        },
+        {
+          "label": "8270_10_WD84226_master.h5ad",
+          "url": "https://osf.io/download/5n7sg/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 113799792,
+          "http_status": null
+        },
+        {
+          "label": "7003_4_WD85806_master.h5ad",
+          "url": "https://osf.io/download/ypc7s/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 131449435,
+          "http_status": null
+        },
+        {
+          "label": "7319_4_HTA11_01938_master.h5ad",
+          "url": "https://osf.io/download/sg8qv/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 59031393,
+          "http_status": null
+        },
+        {
+          "label": "8270_7_WD84602_master.h5ad",
+          "url": "https://osf.io/download/8kxyb/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 186433184,
+          "http_status": null
+        },
+        {
+          "label": "8270_2_HTA11_10711_master.h5ad",
+          "url": "https://osf.io/download/ehq9f/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 99686669,
+          "http_status": null
+        },
+        {
+          "label": "8578_3_WD84221_master.h5ad",
+          "url": "https://osf.io/download/2d5k8/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 94986927,
+          "http_status": null
+        },
+        {
+          "label": "7319_3_HTA11_08622_B_master.h5ad",
+          "url": "https://osf.io/download/q3a29/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 92318353,
+          "http_status": null
+        },
+        {
+          "label": "7794_3_WD84221_master.h5ad",
+          "url": "https://osf.io/download/4bw8p/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 120731257,
+          "http_status": null
+        },
+        {
+          "label": "8899_3_SG00002_master.h5ad",
+          "url": "https://osf.io/download/j7s2h/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 92621630,
+          "http_status": null
+        },
+        {
+          "label": "8270_3_HTA11_07663_master.h5ad",
+          "url": "https://osf.io/download/2c9sp/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 108153521,
+          "http_status": null
+        },
+        {
+          "label": "7794_2_WD33475_master.h5ad",
+          "url": "https://osf.io/download/uxe5v/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 95157924,
+          "http_status": null
+        },
+        {
+          "label": "6723_2_WD86056_master.h5ad",
+          "url": "https://osf.io/download/x3hy4/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 151295810,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Study scope",
+          "value": "31 colorectal specimens reported for the spatial atlas; this is not an assay-specific patient count. Normal, precursor and cancer tissue are present; sample-level condition mapping pending.",
+          "status": "partial",
+          "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10756562/"
+        },
+        {
+          "label": "File verification",
+          "value": "Public OSF API lists nonempty H5AD files; internal expression, coordinate and metadata fields not independently inspected. Grade C: completeness unverified.",
+          "status": "partial",
+          "evidence_url": "https://api.osf.io/v2/nodes/hftq2/files/osfstorage/"
+        },
+        {
+          "label": "Duplicate and reference cohorts",
+          "value": "ST and ST_master are alternative processed views, not independent cohorts. scRNA includes reused reference data; resolve cohort overlap before pooling patients.",
+          "status": "partial",
+          "evidence_url": "https://github.com/Ken-Lau-Lab/spatial_CRC_atlas"
+        },
+        {
+          "label": "MxIF access limitation",
+          "value": "The 16 OSF MxIF quantification CSVs are listed as zero bytes; one downloaded as HTTP 200 with zero bytes. MxIF is excluded pending another usable endpoint.",
+          "status": "verified",
+          "evidence_url": "https://osf.io/hftq2/"
+        },
+        {
+          "label": "Normal tissue classification",
+          "value": "Normal tissue is described in the study; healthy versus adjacent context remains unresolved and is not normalized.",
+          "status": "partial",
+          "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10756562/"
+        }
+      ]
+    },
+    {
+      "id": "ds_campaign001_heiser2023_single-cell",
+      "source_candidate_id": "campaign001_heiser2023_single-cell",
+      "canonical_group_id": "cg_heiser2023",
+      "campaign_id": "CAMPAIGN-001",
+      "module": "single-cell",
+      "title": "Molecular cartography uncovers evolutionary and microenvironmental dynamics in sporadic colorectal tumors — scRNA-seq (platform requires per-cohort curation)",
+      "accession": "OSF hftq2 / scRNA",
+      "technology": "scRNA-seq (platform requires per-cohort curation)",
+      "platform_family": "scRNA-seq (platform requires per-cohort curation)",
+      "platform_assay": "scRNA-seq (platform requires per-cohort curation)",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Colorectal",
+      "disease": "Colorectal cancer",
+      "disease_category": "Cancer",
+      "disease_type": "Colorectal cancer",
+      "condition_classes": [
+        "tumor",
+        "disease_non_tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": null,
+      "files": 9,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "OSF",
+      "updated": "2026-09-17",
+      "description": "Molecular cartography uncovers evolutionary and microenvironmental dynamics in sporadic colorectal tumors — scRNA-seq (platform requires per-cohort curation). 31 colorectal specimens reported for the spatial atlas; this is not an assay-specific patient count. Normal, precursor and cancer tissue are present; sample-level condition mapping pending.",
+      "publications": [
+        {
+          "title": "Molecular cartography uncovers evolutionary and microenvironmental dynamics in sporadic colorectal tumors",
+          "year": 2023,
+          "journal": "Cell",
+          "doi": "10.1016/j.cell.2023.11.006",
+          "pmid": "38065082",
+          "corresponding_authors": [],
+          "url": "https://doi.org/10.1016/j.cell.2023.11.006",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Paper data availability and author repository explicitly associate this deposit with the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "OSF",
+          "accession": "OSF hftq2 / scRNA",
+          "url": "https://osf.io/hftq2/",
+          "record_type": "dataset record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "VUMC_COMBINED.h5ad",
+          "url": "https://osf.io/download/rgtc7/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 87040126,
+          "http_status": null
+        },
+        {
+          "label": "Broad_Epi_CRC_NoNormal_ReFiltered_Counts.h5ad",
+          "url": "https://osf.io/download/sm9ua/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 488174070,
+          "http_status": null
+        },
+        {
+          "label": "outer_combined_all4_dat.h5ad",
+          "url": "https://osf.io/download/ufz4x/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 2102856490,
+          "http_status": null
+        },
+        {
+          "label": "Broad_NonEpi_sub.h5ad",
+          "url": "https://osf.io/download/rxqt9/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 264582912,
+          "http_status": null
+        },
+        {
+          "label": "VUMC_HTAN_VAL_DIS_NONEPI_V2.h5ad",
+          "url": "https://osf.io/download/wemg7/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 40058366,
+          "http_status": null
+        },
+        {
+          "label": "VUMC_HTAN_DIS_EPI_V2.h5ad",
+          "url": "https://osf.io/download/2vx3f/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 728117613,
+          "http_status": null
+        },
+        {
+          "label": "combined_all4_tcell_dat.h5ad",
+          "url": "https://osf.io/download/8ds2j/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 194521863,
+          "http_status": null
+        },
+        {
+          "label": "Broad_Epi_sub.h5ad",
+          "url": "https://osf.io/download/mnrhb/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 77633038,
+          "http_status": null
+        },
+        {
+          "label": "abnormal_epithelium.h5ad",
+          "url": "https://osf.io/download/ufkwj/",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-09-17",
+          "size_bytes": 42070478,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "Processed measurements; see file verification notes"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Study scope",
+          "value": "31 colorectal specimens reported for the spatial atlas; this is not an assay-specific patient count. Normal, precursor and cancer tissue are present; sample-level condition mapping pending.",
+          "status": "partial",
+          "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10756562/"
+        },
+        {
+          "label": "File verification",
+          "value": "Public OSF API lists nonempty H5AD files; internal expression, coordinate and metadata fields not independently inspected. Grade C: completeness unverified.",
+          "status": "partial",
+          "evidence_url": "https://api.osf.io/v2/nodes/hftq2/files/osfstorage/"
+        },
+        {
+          "label": "Duplicate and reference cohorts",
+          "value": "ST and ST_master are alternative processed views, not independent cohorts. scRNA includes reused reference data; resolve cohort overlap before pooling patients.",
+          "status": "partial",
+          "evidence_url": "https://github.com/Ken-Lau-Lab/spatial_CRC_atlas"
+        },
+        {
+          "label": "MxIF access limitation",
+          "value": "The 16 OSF MxIF quantification CSVs are listed as zero bytes; one downloaded as HTTP 200 with zero bytes. MxIF is excluded pending another usable endpoint.",
+          "status": "verified",
+          "evidence_url": "https://osf.io/hftq2/"
+        },
+        {
+          "label": "Normal tissue classification",
+          "value": "Normal tissue is described in the study; healthy versus adjacent context remains unresolved and is not normalized.",
+          "status": "partial",
+          "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10756562/"
+        }
+      ]
     }
   ],
-  "generated_at": "2026-09-17T05:14:03Z"
+  "generated_at": "2026-09-17T07:21:29Z"
 }
