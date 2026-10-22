@@ -86,6 +86,24 @@
       "campaign_id": "CATALOG-VERIFICATION",
       "dataset_count": 0,
       "published_at": "2026-09-17"
+    },
+    {
+      "batch_id": "RCC-SCRNA-001-wave-001",
+      "campaign_id": "RCC-SCRNA-001",
+      "dataset_count": 4,
+      "published_at": "2026-10-19"
+    },
+    {
+      "batch_id": "ATERA-2026-001-wave-001",
+      "campaign_id": "ATERA-2026-001",
+      "dataset_count": 1,
+      "published_at": "2026-10-19"
+    },
+    {
+      "batch_id": "SINGLE-CELL-RESOURCES-2026-10-21",
+      "campaign_id": "SINGLE-CELL-RESOURCES-2026-10-21",
+      "dataset_count": 3,
+      "published_at": "2026-10-21"
     }
   ],
   "datasets": [
@@ -1014,21 +1032,60 @@
       "specimen_types": [
         "FFPE breast tissue section"
       ],
-      "samples": null,
+      "samples": 1,
       "files": null,
       "access": "open_direct",
       "availability_grade": "B",
       "dataset_origin": "vendor_demo",
       "source": "10x Genomics",
-      "updated": "2026-09-17",
-      "description": "Human FFPE breast DCIS specimen profiled with the preproduction Atera Spatial Whole Transcriptome Assay; the record exposes output/supplemental downloads and is explicitly marked preview data.",
-      "publications": [],
+      "updated": "2026-10-19",
+      "description": "One human FFPE breast DCIS section profiled with the preproduction 18,028-gene Atera Whole Transcriptome Assay. The official page reports 170,057 detected cells and identifies the specimen as grade-3 DCIS (T1c N0 M0). The 2026 bioRxiv study analyzes this section alongside a nearby Xenium 280 section from the same tissue block and an independent Xenium Prime 5K section.",
+      "publications": [
+        {
+          "title": "Resolving the immune response across clonal cancer evolution in situ with Atera whole transcriptome profiling",
+          "year": 2026,
+          "journal": "bioRxiv",
+          "corresponding_authors": [
+            "Magdalena Matusiak"
+          ],
+          "pmid": "42620283",
+          "doi": "10.64898/2026.08.03.741871",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+          "publication_status": "preprint",
+          "association_evidence": "The Methods data-sources section explicitly lists this 10x Genomics dataset as one of the three spatial single-cell datasets analyzed in the study.",
+          "relationship": "secondary_analysis"
+        }
+      ],
       "source_records": [
         {
           "provider": "10x Genomics",
           "record_type": "dataset record",
           "accession": "atera-wta-ffpe-human-breast-cancer",
           "url": "https://www.10xgenomics.com/datasets/atera-wta-ffpe-human-breast-cancer"
+        },
+        {
+          "provider": "bioRxiv",
+          "accession": "10.64898/2026.08.03.741871",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+          "record_type": "secondary analysis preprint"
+        },
+        {
+          "provider": "NCBI BioProject / SRA",
+          "accession": "PRJNA1509685",
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1509685",
+          "record_type": "orthogonal WGS validation dataset"
+        },
+        {
+          "provider": "TissueViewer",
+          "accession": "m3zkg5",
+          "url": "https://tissueviewer.com/link/m3zkg5",
+          "record_type": "orthogonal multiplex IF dataset"
+        },
+        {
+          "provider": "GitHub",
+          "accession": "shaochwu/atera_project",
+          "url": "https://github.com/shaochwu/atera_project",
+          "record_type": "analysis code repository"
         }
       ],
       "access_links": [
@@ -1037,17 +1094,53 @@
           "url": "https://www.10xgenomics.com/datasets/atera-wta-ffpe-human-breast-cancer",
           "link_type": "dataset_download_page",
           "access_level": "open_direct",
-          "last_checked": "2026-09-15",
+          "last_checked": "2026-10-19",
           "size_bytes": null,
-          "http_status": null,
+          "http_status": 200,
           "resource_role": "dataset_resource"
+        },
+        {
+          "label": "Laser-microdissected-region WGS (BioProject PRJNA1509685)",
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1509685",
+          "link_type": "repository",
+          "resource_role": "related_validation_data",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "Adjacent-section multiplex IF in TissueViewer",
+          "url": "https://tissueviewer.com/link/m3zkg5",
+          "link_type": "visualization",
+          "resource_role": "related_validation_data",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "Atera comparison analysis code",
+          "url": "https://github.com/shaochwu/atera_project",
+          "link_type": "repository",
+          "resource_role": "analysis_code",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": null,
+          "http_status": null
         }
       ],
       "modalities": [
         "Spatial transcriptomics"
       ],
-      "file_roles": [],
-      "evidence_count": 7,
+      "file_roles": [
+        "expression_matrix",
+        "spatial_coordinates",
+        "cell_metadata",
+        "run_metadata",
+        "histology_image"
+      ],
+      "evidence_count": 10,
       "verification": "verified",
       "original_labels": {
         "disease": "Breast cancer",
@@ -1074,28 +1167,52 @@
       ],
       "curation_revision": "CATALOG-CURATION-2026-09-17",
       "validation_profile": {
-        "checked_at": "2026-09-17",
-        "source_status": "not_rechecked",
-        "source_count": 0,
-        "classification_status": "not_rechecked",
-        "sample_status": "not_checked",
-        "sample_detail": "Patient/sample overlap has not been resolved for this record.",
-        "file_status": "not_checked",
+        "checked_at": "2026-10-19",
+        "source_status": "retrieved",
+        "source_count": 5,
+        "classification_status": "source_metadata_checked",
+        "sample_status": "sample_metadata_checked",
+        "sample_detail": "The official 10x page reports one FFPE breast DCIS section; the paper establishes its relationship to the nearby Xenium 280 section.",
+        "file_status": "manifest_only",
         "verified_files": 0,
-        "file_detail": "No complete byte-level file comparison for this record.",
-        "findings": [],
-        "evidence_urls": [],
-        "followup_attempted": true,
-        "followup_date": "2026-09-17",
-        "source_attempts": [
-          {
-            "url": "https://www.10xgenomics.com/datasets/atera-wta-ffpe-human-breast-cancer",
-            "status": "unavailable",
-            "http_status": "429"
-          }
+        "file_detail": "The provider lists output and supplemental resources, but file contents and checksums were not inspected.",
+        "findings": [
+          "PRJNA1509685 and TissueViewer are orthogonal validation resources and are not counted as Atera samples."
         ],
-        "followup_detail": "Follow-up attempted 1 source URLs; 0 yielded dataset metadata reviewed for identity. HTTP page retrieval alone is not label, sample or file verification. Some requests failed or encountered access restrictions; this does not establish that the dataset is unavailable."
-      }
+        "evidence_urls": [
+          "https://www.10xgenomics.com/datasets/atera-wta-ffpe-human-breast-cancer",
+          "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+          "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1509685",
+          "https://tissueviewer.com/link/m3zkg5",
+          "https://github.com/shaochwu/atera_project"
+        ]
+      },
+      "annotations": [
+        {
+          "label": "Dataset scope",
+          "value": "The official 10x page reports one FFPE breast specimen, a preproduction 18,028-gene Atera WTA panel, 170,057 detected cells and grade-3 DCIS (T1c N0 M0).",
+          "status": "verified",
+          "evidence_url": "https://www.10xgenomics.com/datasets/atera-wta-ffpe-human-breast-cancer"
+        },
+        {
+          "label": "Study reuse and tissue relationship",
+          "value": "The 2026 preprint explicitly analyzes this public Atera dataset. The Atera and Xenium 280 sections came from the same tissue block approximately 100 micrometres apart; the Xenium Prime 5K section came from a different patient.",
+          "status": "verified",
+          "evidence_url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2"
+        },
+        {
+          "label": "Orthogonal validation resources",
+          "value": "The study reports WGS from 16 laser-microdissected regions under PRJNA1509685, adjacent-section multiplex IF in TissueViewer, and public preprocessing/analysis code. These are linked validation resources, not additional Atera samples.",
+          "status": "verified",
+          "evidence_url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2"
+        },
+        {
+          "label": "Verification limits",
+          "value": "Official dataset and publication metadata were reviewed, but large output bundles, WGS files, checksums and cross-section registration were not downloaded or independently validated.",
+          "status": "partial",
+          "evidence_url": "https://www.10xgenomics.com/datasets/atera-wta-ffpe-human-breast-cancer"
+        }
+      ]
     },
     {
       "id": "ds_campaign001_brst_sptx_014",
@@ -19644,8 +19761,8 @@
       "availability_grade": "C",
       "dataset_origin": "vendor_demo",
       "source": "10x Genomics",
-      "updated": "2026-09-17",
-      "description": "5K plus 100 custom genes; 699,110 cells. Paper sample label is retained as accession; vendor output naming may omit V3. One selected tissue sample. Cell numbers are not biological sample counts. Public outputs are accessed through the dataset page; archive contents unvalidated.",
+      "updated": "2026-10-19",
+      "description": "One FFPE human breast cancer section profiled with Xenium Prime 5K Human Pan Tissue and Pathways Panel plus 100 custom genes. The official page reports Xenium Onboard Analysis 3.0.0 and 699,110 detected cells. The 2026 Atera comparison paper uses this dataset as an independent-patient Xenium 5K reference containing DCIS and invasive breast cancer.",
       "publications": [
         {
           "title": "Non-invasive profiling of the tumour microenvironment with spatial ecotypes",
@@ -19657,6 +19774,20 @@
           "pmid": null,
           "publication_status": "peer_reviewed",
           "association_evidence": "Reused dataset in Spatial EcoTyper supplementary inventory; this publication did not generate the original dataset.",
+          "relationship": "secondary_analysis"
+        },
+        {
+          "title": "Resolving the immune response across clonal cancer evolution in situ with Atera whole transcriptome profiling",
+          "year": 2026,
+          "journal": "bioRxiv",
+          "corresponding_authors": [
+            "Magdalena Matusiak"
+          ],
+          "pmid": "42620283",
+          "doi": "10.64898/2026.08.03.741871",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+          "publication_status": "preprint",
+          "association_evidence": "The Methods data-sources section explicitly lists this 10x Genomics dataset as one of the three spatial single-cell datasets analyzed in the study.",
           "relationship": "secondary_analysis"
         }
       ],
@@ -19672,6 +19803,12 @@
           "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10452-4/MediaObjects/41586_2026_10452_MOESM3_ESM.xlsx",
           "accession": "s41586-026-10452-4",
           "record_type": "secondary-use inventory"
+        },
+        {
+          "provider": "bioRxiv",
+          "accession": "10.64898/2026.08.03.741871",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+          "record_type": "secondary analysis preprint"
         }
       ],
       "access_links": [
@@ -19680,9 +19817,9 @@
           "url": "https://www.10xgenomics.com/datasets/xenium-prime-ffpe-human-breast-cancer",
           "link_type": "repository",
           "access_level": "open_direct",
-          "last_checked": "2026-09-17",
+          "last_checked": "2026-10-19",
           "size_bytes": null,
-          "http_status": null,
+          "http_status": 200,
           "resource_role": "dataset_resource"
         }
       ],
@@ -19693,7 +19830,7 @@
         "expression_matrix",
         "spatial_coordinates"
       ],
-      "evidence_count": 2,
+      "evidence_count": 5,
       "verification": "partial",
       "annotations": [
         {
@@ -19701,6 +19838,12 @@
           "value": "5K plus 100 custom genes; 699,110 cells. Paper sample label is retained as accession; vendor output naming may omit V3. One selected tissue sample. Cell numbers are not biological sample counts. Public outputs are accessed through the dataset page; archive contents unvalidated.",
           "status": "partial",
           "evidence_url": "https://www.10xgenomics.com/datasets/xenium-prime-ffpe-human-breast-cancer"
+        },
+        {
+          "label": "Atera comparison reuse",
+          "value": "The 2026 preprint explicitly uses this public Xenium Prime 5K dataset as the independent-patient comparison section. It contains DCIS plus an invasive breast cancer region and is not donor-matched to the Atera/Xenium 280 tissue block.",
+          "status": "verified",
+          "evidence_url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2"
         },
         {
           "label": "Secondary reuse",
@@ -19740,27 +19883,23 @@
       ],
       "curation_revision": "CATALOG-CURATION-2026-09-17",
       "validation_profile": {
-        "checked_at": "2026-09-17",
-        "source_status": "not_rechecked",
-        "source_count": 0,
-        "classification_status": "not_rechecked",
-        "sample_status": "not_checked",
-        "sample_detail": "Patient/sample overlap has not been resolved for this record.",
-        "file_status": "not_checked",
+        "checked_at": "2026-10-19",
+        "source_status": "retrieved",
+        "source_count": 2,
+        "classification_status": "source_metadata_checked",
+        "sample_status": "sample_metadata_checked",
+        "sample_detail": "The official 10x page reports one FFPE breast cancer donor/section; the 2026 paper identifies it as an independent patient relative to Atera and Xenium 280.",
+        "file_status": "manifest_only",
         "verified_files": 0,
-        "file_detail": "No complete byte-level file comparison for this record.",
-        "findings": [],
-        "evidence_urls": [],
-        "followup_attempted": true,
-        "followup_date": "2026-09-17",
-        "source_attempts": [
-          {
-            "url": "https://www.10xgenomics.com/datasets/xenium-prime-ffpe-human-breast-cancer",
-            "status": "unavailable",
-            "http_status": "429"
-          }
+        "file_detail": "The provider describes output-bundle contents, but the large files and checksums were not independently inspected.",
+        "findings": [
+          "The 699,110 detected cells are not a biological sample count.",
+          "This section must not be treated as donor-matched to the Atera/Xenium 280 block."
         ],
-        "followup_detail": "Follow-up attempted 1 source URLs; 0 yielded dataset metadata reviewed for identity. HTTP page retrieval alone is not label, sample or file verification. Some requests failed or encountered access restrictions; this does not establish that the dataset is unavailable."
+        "evidence_urls": [
+          "https://www.10xgenomics.com/datasets/xenium-prime-ffpe-human-breast-cancer",
+          "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2"
+        ]
       }
     },
     {
@@ -28387,7 +28526,1477 @@
           "https://api.gdc.cancer.gov/files?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22cases.project.project_id%22%2C%22value%22%3A%5B%22TCGA-UCEC%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22data_type%22%2C%22value%22%3A%5B%22Gene+Expression+Quantification%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22analysis.workflow_type%22%2C%22value%22%3A%5B%22STAR+-+Counts%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22cases.samples.sample_type%22%2C%22value%22%3A%5B%22Primary+Tumor%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22access%22%2C%22value%22%3A%5B%22open%22%5D%7D%7D%5D%7D&fields=file_id%2Cfile_name%2Cfile_size%2Cmd5sum%2Ccases.submitter_id%2Ccases.samples.submitter_id&size=2000&format=JSON"
         ]
       }
+    },
+    {
+      "id": "ds_rcc_scrna_gse242299",
+      "source_candidate_id": "rcc-scrna-gse242299",
+      "canonical_group_id": "cg_gse242299",
+      "campaign_id": "RCC-SCRNA-001",
+      "module": "single-cell",
+      "title": "Single-cell transcriptional profiling of clear cell renal cell carcinoma reveals a tumor-associated endothelial tip cell phenotype",
+      "accession": "GSE242299",
+      "technology": "inDrops droplet-based scRNA-seq",
+      "platform_family": "inDrops",
+      "platform_assay": "Single-cell RNA sequencing",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Kidney",
+      "disease": "Clear cell renal cell carcinoma",
+      "disease_category": "Cancer",
+      "disease_type": "Kidney cancer",
+      "disease_types": [
+        "Kidney cancer"
+      ],
+      "disease_subtypes": [
+        "Clear cell renal cell carcinoma"
+      ],
+      "tissues": [
+        "Kidney"
+      ],
+      "condition_classes": [
+        "tumor",
+        "adjacent_non_tumor"
+      ],
+      "specimen_types": [
+        "fresh primary tumor tissue",
+        "fresh healthy-adjacent kidney tissue"
+      ],
+      "samples": 17,
+      "files": 2,
+      "access": "open_direct",
+      "availability_grade": "A",
+      "dataset_origin": "research_study",
+      "source": "NCBI GEO / SRA",
+      "updated": "2026-10-19",
+      "description": "Paired ccRCC tumor and healthy-adjacent kidney single-cell reference with 50,236 transcriptomes. Eight tumor specimens and nine adjacent specimens from nine patients were profiled by inDrops; the study emphasizes a tumor-associated endothelial tip-cell phenotype and vascular-immune interactions.",
+      "publications": [
+        {
+          "title": "Single-cell transcriptional profiling of clear cell renal cell carcinoma reveals a tumor-associated endothelial tip cell phenotype",
+          "year": 2024,
+          "journal": "Communications Biology",
+          "corresponding_authors": [],
+          "pmid": "38942917",
+          "doi": "10.1038/s42003-024-06478-x",
+          "url": "https://doi.org/10.1038/s42003-024-06478-x",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "The GEO record cites PMID 38942917 and links the article; the paper title and cohort description match GSE242299."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "accession": "GSE242299",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242299",
+          "record_type": "dataset record"
+        },
+        {
+          "provider": "NCBI BioProject",
+          "accession": "PRJNA1013059",
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1013059",
+          "record_type": "project record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE242299 raw count matrices and feature/barcode tables",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242299/suppl/GSE242299_RAW.tar",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": 312565760,
+          "http_status": 200
+        },
+        {
+          "label": "Annotated 50,236-cell AnnData object",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242299/suppl/GSE242299_all_cells_50236_33538.h5ad.gz",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": 5350598000,
+          "http_status": 200
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "raw_count_matrix",
+        "processed_expression_object",
+        "cell_annotations",
+        "sample_metadata"
+      ],
+      "evidence_count": 4,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and sample counting",
+          "value": "GEO reports 8 ccRCC tumor specimens and 9 healthy-adjacent kidney specimens from 9 patients. The 31 GSM records represent inDrops emulsions/libraries; samples=17 records biological tissue specimens rather than technical emulsions.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242299"
+        },
+        {
+          "label": "Reference role",
+          "value": "Preferred vascular reference for ccRCC, including endothelial heterogeneity and the tumor-associated tip-cell phenotype.",
+          "status": "verified",
+          "evidence_url": "https://doi.org/10.1038/s42003-024-06478-x"
+        },
+        {
+          "label": "File verification",
+          "value": "GEO metadata and the two public supplementary file response headers were checked. The 298 MiB raw-count archive and 5.0 GiB H5AD were not downloaded or inspected internally, so matrix integrity and complete sample-to-cell mapping remain unverified.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242299"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-19",
+        "source_status": "retrieved",
+        "source_count": 2,
+        "classification_status": "sample_metadata_checked",
+        "sample_status": "sample_metadata_checked",
+        "sample_detail": "GEO series design and all 31 GSM identifiers were reviewed. Eight tumor and nine adjacent tissue specimens are represented by 31 technical emulsion/library records; the catalog count is 17 biological specimens.",
+        "file_status": "manifest_only",
+        "verified_files": 0,
+        "file_detail": "GEO supplementary inventory and HTTP status/content length were checked for two files. File contents, checksums and matrix structure were not verified.",
+        "findings": [
+          "The 31 GSM records must not be interpreted as 31 independent biological samples."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242299",
+          "https://pubmed.ncbi.nlm.nih.gov/38942917/"
+        ]
+      },
+      "aliases": [
+        "ds_rcc_scrna_gse242299",
+        "GSE242299",
+        "ccRCC endothelial tip-cell reference"
+      ],
+      "original_labels": {
+        "disease": "clear cell renal cell carcinoma",
+        "disease_type": "clear cell renal cell carcinoma",
+        "disease_category": "Cancer",
+        "tissue": "paired tumor and healthy adjacent kidney tissues",
+        "condition_classes": [
+          "tumor",
+          "adjacent_non_tumor"
+        ],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      }
+    },
+    {
+      "id": "ds_rcc_scrna_gse159115",
+      "source_candidate_id": "rcc-scrna-gse159115",
+      "canonical_group_id": "cg_gse159115",
+      "campaign_id": "RCC-SCRNA-001",
+      "module": "single-cell",
+      "title": "Single Cell Analyses of Renal Cell Cancers Reveal Insights into Tumor Microenvironment, Cell of Origin, and Therapy Response",
+      "accession": "GSE159115",
+      "technology": "10x Chromium Single Cell 3' v2 scRNA-seq",
+      "platform_family": "10x Chromium",
+      "platform_assay": "Single Cell 3' Gene Expression",
+      "platform_version": "v2 chemistry",
+      "organism": "Homo sapiens",
+      "tissue": "Kidney",
+      "disease": "Renal cell carcinoma",
+      "disease_category": "Cancer",
+      "disease_type": "Kidney cancer",
+      "disease_types": [
+        "Kidney cancer"
+      ],
+      "disease_subtypes": [
+        "Clear cell renal cell carcinoma",
+        "Chromophobe renal cell carcinoma"
+      ],
+      "tissues": [
+        "Kidney"
+      ],
+      "condition_classes": [
+        "tumor",
+        "disease_non_tumor"
+      ],
+      "specimen_types": [
+        "dissociated renal tumor tissue",
+        "dissociated benign kidney tissue"
+      ],
+      "samples": 14,
+      "files": 4,
+      "access": "open_direct",
+      "availability_grade": "A",
+      "dataset_origin": "research_study",
+      "source": "NCBI GEO",
+      "updated": "2026-10-19",
+      "description": "Approximately 30,000 single cells from 8 renal tumor specimens and 6 benign kidney specimens, spanning clear cell and chromophobe RCC. Public processed HDF5 count matrices and separate ccRCC, chRCC and normal cell-annotation tables support epithelial reference mapping and tumor-versus-benign comparisons.",
+      "publications": [
+        {
+          "title": "Single-cell analyses of renal cell cancers reveal insights into tumor microenvironment, cell of origin, and therapy response",
+          "year": 2021,
+          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+          "corresponding_authors": [],
+          "pmid": "34099557",
+          "doi": "10.1073/pnas.2103240118",
+          "url": "https://doi.org/10.1073/pnas.2103240118",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "The GEO record cites PMID 34099557; title, authors and cohort composition match the publication."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "accession": "GSE159115",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159115",
+          "record_type": "dataset record"
+        },
+        {
+          "provider": "NCBI BioProject",
+          "accession": "PRJNA667716",
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA667716",
+          "record_type": "project record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Processed HDF5 raw-count tables",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE159nnn/GSE159115/suppl/GSE159115_RAW.tar",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": 120535040,
+          "http_status": 200
+        },
+        {
+          "label": "ccRCC cell annotations",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE159nnn/GSE159115/suppl/GSE159115_ccRCC_anno.csv.gz",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": 927306,
+          "http_status": 200
+        },
+        {
+          "label": "chRCC cell annotations",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE159nnn/GSE159115/suppl/GSE159115_chRCC_anno.csv.gz",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": 114225,
+          "http_status": 200
+        },
+        {
+          "label": "Benign kidney cell annotations",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE159nnn/GSE159115/suppl/GSE159115_normal_anno.csv.gz",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": 277476,
+          "http_status": 200
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "raw_count_matrix",
+        "cell_annotations",
+        "sample_metadata"
+      ],
+      "evidence_count": 4,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and sample counting",
+          "value": "Fourteen GEO samples correspond to 8 renal tumor specimens and 6 benign kidney specimens from ccRCC and chRCC patients. Benign tissues are retained as disease-associated non-tumor reference rather than relabeled as healthy donors.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159115"
+        },
+        {
+          "label": "Reference role",
+          "value": "Reference for distinguishing normal/benign renal epithelial populations from tumor cells and for RCC cell-of-origin annotation.",
+          "status": "verified",
+          "evidence_url": "https://doi.org/10.1073/pnas.2103240118"
+        },
+        {
+          "label": "Access limitation",
+          "value": "GEO provides processed HDF5 counts and cell annotations. The submitter states that patient FASTQ files are not public in GEO because of privacy restrictions.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159115"
+        },
+        {
+          "label": "File verification",
+          "value": "The four public supplementary file response headers were checked, but archive contents and cell-to-sample mappings were not downloaded or validated internally.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159115"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-19",
+        "source_status": "retrieved",
+        "source_count": 2,
+        "classification_status": "sample_metadata_checked",
+        "sample_status": "sample_metadata_checked",
+        "sample_detail": "GEO confirms 14 specimens: 8 renal tumors and 6 benign kidney tissues from ccRCC and chRCC patients. Benign tissues are not reclassified as healthy-donor samples.",
+        "file_status": "manifest_only",
+        "verified_files": 0,
+        "file_detail": "GEO supplementary inventory and HTTP status/content length were checked for four files. HDF5/CSV contents and cell-to-sample mappings were not verified.",
+        "findings": [
+          "Patient FASTQ files are not public in GEO; this entry documents open processed data only."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159115",
+          "https://pubmed.ncbi.nlm.nih.gov/34099557/"
+        ]
+      },
+      "aliases": [
+        "ds_rcc_scrna_gse159115",
+        "GSE159115",
+        "RCC cell-of-origin reference"
+      ],
+      "original_labels": {
+        "disease": "clear cell cell carcinoma (ccRCC) and chromophobe renal cell carcinoma (chRCC)",
+        "disease_type": "renal cell carcinoma",
+        "disease_category": "Cancer",
+        "tissue": "renal tumor and benign human kidney specimens",
+        "condition_classes": [
+          "tumor",
+          "disease_non_tumor"
+        ],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      }
+    },
+    {
+      "id": "ds_rcc_scrna_gse328575",
+      "source_candidate_id": "rcc-scrna-gse328575",
+      "canonical_group_id": "cg_gse328692",
+      "campaign_id": "RCC-SCRNA-001",
+      "module": "single-cell",
+      "title": "Single cell gene expression profiling of renal cell carcinoma",
+      "accession": "GSE328575",
+      "technology": "10x Genomics Chromium Single Cell 3' scRNA-seq",
+      "platform_family": "10x Chromium",
+      "platform_assay": "Single Cell 3' Gene Expression",
+      "platform_version": null,
+      "organism": "Homo sapiens; Mus musculus",
+      "tissue": "Kidney",
+      "disease": "Renal cell carcinoma",
+      "disease_category": "Cancer",
+      "disease_type": "Kidney cancer",
+      "disease_types": [
+        "Kidney cancer"
+      ],
+      "disease_subtypes": [
+        "Clear cell renal cell carcinoma",
+        "Papillary renal cell carcinoma",
+        "Chromophobe renal cell carcinoma",
+        "Clear cell papillary renal cell tumor",
+        "Unclassified renal cell carcinoma"
+      ],
+      "tissues": [
+        "Kidney"
+      ],
+      "condition_classes": [
+        "tumor",
+        "metastatic_tumor"
+      ],
+      "specimen_types": [
+        "primary tumor",
+        "metastatic tumor",
+        "patient-derived xenograft"
+      ],
+      "samples": 21,
+      "files": 1,
+      "access": "open_direct",
+      "availability_grade": "A",
+      "dataset_origin": "research_study",
+      "source": "NCBI GEO / medRxiv",
+      "updated": "2026-10-19",
+      "description": "Processed single-cell expression compendium of 21 RCC specimens: 16 ccRCC, 2 papillary RCC, 1 chromophobe RCC, 1 clear cell papillary renal cell tumor and 1 unclassified RCC. The cohort includes 12 primary and 9 metastatic specimens derived from 16 patient tumors and 5 patient-derived xenograft models, with more than 85,000 cells reported in the associated preprint.",
+      "publications": [
+        {
+          "title": "Single-cell gene programs define subtype identity and metastatic trajectories in renal cell carcinoma",
+          "year": 2026,
+          "journal": "medRxiv",
+          "corresponding_authors": [],
+          "pmid": null,
+          "doi": "10.64898/2026.07.14.26357682",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.07.14.26357682v1",
+          "publication_status": "preprint",
+          "association_evidence": "The preprint data-availability statement identifies GSE328692; GSE328575 is the single-cell RCC SubSeries within that SuperSeries."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "accession": "GSE328575",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328575",
+          "record_type": "dataset record"
+        },
+        {
+          "provider": "NCBI GEO",
+          "accession": "GSE328692",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328692",
+          "record_type": "SuperSeries record"
+        },
+        {
+          "provider": "NCBI BioProject",
+          "accession": "PRJNA1455663",
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1455663",
+          "record_type": "project record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Processed SingleCellExperiment object with counts and metadata",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE328nnn/GSE328575/suppl/GSE328575_sce.rds",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": 629966024,
+          "http_status": 200
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "processed_expression_object",
+        "cell_annotations",
+        "sample_metadata"
+      ],
+      "evidence_count": 5,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and sample counting",
+          "value": "GEO reports 21 specimens: 12 primary and 9 metastatic tumors, comprising 16 ccRCC, 2 pRCC, 1 chRCC, 1 clear cell papillary renal cell tumor and 1 unclassified RCC. The specimens derive from 16 patient tumors and 5 PDX models; primary and metastatic tumors are not patient-matched.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328575"
+        },
+        {
+          "label": "Reference role",
+          "value": "Tumor-focused RCC reference with strong ccRCC representation and primary-versus-metastatic coverage.",
+          "status": "verified",
+          "evidence_url": "https://www.medrxiv.org/content/10.64898/2026.07.14.26357682v1"
+        },
+        {
+          "label": "Access and organism limitation",
+          "value": "The open RDS contains processed counts and metadata. Human patient raw sequence files are described as controlled through EGA, but GEO does not provide an EGA accession. The study is multispecies because PDX samples use human and mouse references.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328575"
+        },
+        {
+          "label": "Series relationship",
+          "value": "GSE328575 is the single-cell RCC SubSeries of GSE328692. The other SubSeries cover perturbation bulk RNA-seq and CosMx spatial data and are not duplicated in this entry.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328692"
+        },
+        {
+          "label": "File verification",
+          "value": "The public 600.8 MiB RDS response header was checked. The object was not downloaded or opened, so internal matrix integrity, annotation completeness and patient/PDX barcode mapping remain unverified.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328575"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-19",
+        "source_status": "retrieved",
+        "source_count": 3,
+        "classification_status": "sample_metadata_checked",
+        "sample_status": "sample_metadata_checked",
+        "sample_detail": "GEO confirms 21 specimens: 12 primary and 9 metastatic tumors derived from 16 patient tumors and 5 PDX models. Sixteen specimens are ccRCC; primary and metastatic tumors are not patient-matched.",
+        "file_status": "manifest_only",
+        "verified_files": 0,
+        "file_detail": "The GEO supplementary inventory and HTTP status/content length were checked for the processed RDS. RDS contents, checksums and sample/model mappings were not verified.",
+        "findings": [
+          "The cohort is multispecies because PDX samples use human and mouse references.",
+          "Human patient raw reads are described as controlled through EGA, but GEO does not list an EGA accession."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328575",
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328692",
+          "https://www.medrxiv.org/content/10.64898/2026.07.14.26357682v1"
+        ]
+      },
+      "aliases": [
+        "ds_rcc_scrna_gse328575",
+        "GSE328575",
+        "GSE328692 single-cell RCC SubSeries"
+      ],
+      "original_labels": {
+        "disease": "renal cell carcinoma",
+        "disease_type": "renal cell carcinoma",
+        "disease_category": "Cancer",
+        "tissue": "primary and metastatic renal cell carcinoma specimens and PDX models",
+        "condition_classes": [
+          "tumor",
+          "metastatic_tumor"
+        ],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      }
+    },
+    {
+      "id": "ds_rcc_scrna_gse152938",
+      "source_candidate_id": "rcc-scrna-gse152938",
+      "canonical_group_id": "cg_gse152938",
+      "campaign_id": "RCC-SCRNA-001",
+      "module": "single-cell",
+      "title": "Single-Cell RNA Sequencing in Multiple Pathologic Types of Renal Cell Carcinoma Revealed Novel Potential Tumor-Specific Markers",
+      "accession": "GSE152938",
+      "technology": "10x Genomics scRNA-seq",
+      "platform_family": "10x Chromium",
+      "platform_assay": "Single-cell RNA sequencing",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Kidney",
+      "disease": "Renal cell carcinoma",
+      "disease_category": "Cancer",
+      "disease_type": "Kidney cancer",
+      "disease_types": [
+        "Kidney cancer"
+      ],
+      "disease_subtypes": [
+        "Clear cell renal cell carcinoma",
+        "Papillary renal cell carcinoma",
+        "Chromophobe renal cell carcinoma"
+      ],
+      "tissues": [
+        "Kidney"
+      ],
+      "condition_classes": [
+        "tumor",
+        "disease_non_tumor"
+      ],
+      "specimen_types": [
+        "primary renal tumor tissue",
+        "non-tumor kidney tissue"
+      ],
+      "samples": 5,
+      "files": 1,
+      "access": "open_direct",
+      "availability_grade": "A",
+      "dataset_origin": "research_study",
+      "source": "NCBI GEO / SRA",
+      "updated": "2026-10-19",
+      "description": "Multi-subtype RCC single-cell reference comprising 2 ccRCC, 1 papillary RCC, 1 chromophobe RCC and 1 non-tumor kidney specimen from 4 patients. GEO reports 30,263 cells after quality control, including 12,915 ccRCC, 10,132 papillary RCC, 7,216 chromophobe RCC and 585 normal cells.",
+      "publications": [
+        {
+          "title": "Single-Cell RNA Sequencing in Multiple Pathologic Types of Renal Cell Carcinoma Revealed Novel Potential Tumor-Specific Markers",
+          "year": 2021,
+          "journal": "Frontiers in Oncology",
+          "corresponding_authors": [],
+          "pmid": "34722263",
+          "doi": "10.3389/fonc.2021.719564",
+          "url": "https://doi.org/10.3389/fonc.2021.719564",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "The GEO record cites PMID 34722263 and the publication describes the same five-sample, multi-subtype RCC cohort."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "accession": "GSE152938",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152938",
+          "record_type": "dataset record"
+        },
+        {
+          "provider": "NCBI SRA",
+          "accession": "SRP268262",
+          "url": "https://www.ncbi.nlm.nih.gov/sra?term=SRP268262",
+          "record_type": "sequence archive record"
+        },
+        {
+          "provider": "NCBI BioProject",
+          "accession": "PRJNA641020",
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA641020",
+          "record_type": "project record"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE152938 processed sample archives",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE152nnn/GSE152938/suppl/GSE152938_RAW.tar",
+          "link_type": "direct_file",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": 384860160,
+          "http_status": 200
+        },
+        {
+          "label": "SRA raw sequence records",
+          "url": "https://www.ncbi.nlm.nih.gov/sra?term=SRP268262",
+          "link_type": "repository",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "processed_expression_matrix",
+        "raw_sequence_reads",
+        "cell_annotations",
+        "sample_metadata"
+      ],
+      "evidence_count": 4,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Cohort and sample counting",
+          "value": "Five tissue specimens from four patients were profiled: 2 ccRCC, 1 papillary RCC, 1 chromophobe RCC and 1 non-tumor kidney specimen. The non-tumor sample is retained as disease-associated reference because GEO does not establish a healthy-donor origin.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152938"
+        },
+        {
+          "label": "Reference role",
+          "value": "Foundational annotation reference spanning three RCC subtypes and non-tumor kidney cells.",
+          "status": "verified",
+          "evidence_url": "https://doi.org/10.3389/fonc.2021.719564"
+        },
+        {
+          "label": "File verification",
+          "value": "The public 367 MiB GEO archive response header was checked and GEO links the raw reads to SRP268262. The archive and sequence files were not downloaded, so matrix integrity and sample-level annotation completeness remain unverified.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152938"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-19",
+        "source_status": "retrieved",
+        "source_count": 3,
+        "classification_status": "sample_metadata_checked",
+        "sample_status": "sample_metadata_checked",
+        "sample_detail": "GEO confirms five specimens from four patients: two ccRCC, one papillary RCC, one chromophobe RCC and one non-tumor kidney specimen.",
+        "file_status": "manifest_only",
+        "verified_files": 0,
+        "file_detail": "The GEO supplementary inventory and HTTP status/content length were checked for the processed archive; GEO also links SRP268262. Archive contents, checksums and raw reads were not verified.",
+        "findings": [
+          "The non-tumor specimen is disease-associated reference tissue, not a confirmed healthy-donor sample."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152938",
+          "https://www.ncbi.nlm.nih.gov/sra?term=SRP268262",
+          "https://pubmed.ncbi.nlm.nih.gov/34722263/"
+        ]
+      },
+      "aliases": [
+        "ds_rcc_scrna_gse152938",
+        "GSE152938",
+        "multi-subtype RCC single-cell reference"
+      ],
+      "original_labels": {
+        "disease": "clear cell, papillary and chromophobe renal cell carcinoma",
+        "disease_type": "renal cell carcinoma",
+        "disease_category": "Cancer",
+        "tissue": "renal tumor and normal kidney samples",
+        "condition_classes": [
+          "tumor",
+          "disease_non_tumor"
+        ],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      }
+    },
+    {
+      "id": "ds_atera2026_xenium280_breast_biomarkers",
+      "source_candidate_id": "atera2026-xenium280-breast-biomarkers",
+      "canonical_group_id": "cg_10x_xenium_breast_biomarkers",
+      "campaign_id": "ATERA-2026-001",
+      "module": "spatial",
+      "title": "Xenium v1 Human Breast FFPE with Biomarkers & Housekeeping Genes Custom Panel",
+      "accession": "xenium-ffpe-human-breast-biomarkers",
+      "technology": "Xenium v1 280-gene fully custom panel",
+      "platform_family": "Xenium",
+      "platform_assay": "Xenium In Situ Gene Expression",
+      "platform_version": "Xenium Onboard Analysis 4.0.0",
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "disease": "Breast cancer with normal reference section",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "disease_types": [
+        "Breast cancer"
+      ],
+      "disease_subtypes": [
+        "Ductal carcinoma in situ",
+        "Invasive ductal carcinoma",
+        "Columnar cell hyperplasia / ductal carcinoma in situ"
+      ],
+      "tissues": [
+        "Breast"
+      ],
+      "condition_classes": [
+        "tumor",
+        "healthy_normal"
+      ],
+      "specimen_types": [
+        "FFPE breast tissue section"
+      ],
+      "samples": 12,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "vendor_demo",
+      "source": "10x Genomics",
+      "updated": "2026-10-19",
+      "description": "Twelve human FFPE breast sections (8 DCIS, 3 IDC and 1 normal) profiled with a fully custom 280-gene Xenium v1 panel and Xenium Onboard Analysis 4.0.0. The 2026 Atera comparison study specifically reuses S1-Bottom, a grade-3 DCIS section (T1c N0 M0; HER2-1+) with 254,480 detected cells.",
+      "publications": [
+        {
+          "title": "Resolving the immune response across clonal cancer evolution in situ with Atera whole transcriptome profiling",
+          "year": 2026,
+          "journal": "bioRxiv",
+          "corresponding_authors": [
+            "Magdalena Matusiak"
+          ],
+          "pmid": "42620283",
+          "doi": "10.64898/2026.08.03.741871",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+          "publication_status": "preprint",
+          "association_evidence": "The Methods data-sources section explicitly lists this 10x Genomics dataset as one of the three spatial single-cell datasets analyzed in the study.",
+          "relationship": "secondary_analysis"
+        },
+        {
+          "title": "Biomarker Quantification in Breast Cancer using Xenium In Situ",
+          "year": 2025,
+          "journal": "bioRxiv",
+          "corresponding_authors": [
+            "Sarah E.B. Taylor"
+          ],
+          "pmid": null,
+          "doi": "10.64898/2025.12.08.692193",
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.08.692193v1",
+          "publication_status": "preprint",
+          "association_evidence": "The official 10x dataset page identifies this preprint as the companion study for all 12 sections.",
+          "relationship": "primary_dataset_publication"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "10x Genomics",
+          "accession": "xenium-ffpe-human-breast-biomarkers",
+          "url": "https://www.10xgenomics.com/datasets/xenium-ffpe-human-breast-biomarkers",
+          "record_type": "dataset record"
+        },
+        {
+          "provider": "bioRxiv",
+          "accession": "10.64898/2026.08.03.741871",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+          "record_type": "secondary analysis preprint"
+        },
+        {
+          "provider": "bioRxiv",
+          "accession": "10.64898/2025.12.08.692193",
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.08.692193v1",
+          "record_type": "companion preprint"
+        },
+        {
+          "provider": "NCBI BioProject / SRA",
+          "accession": "PRJNA1509685",
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1509685",
+          "record_type": "orthogonal WGS validation dataset"
+        },
+        {
+          "provider": "TissueViewer",
+          "accession": "m3zkg5",
+          "url": "https://tissueviewer.com/link/m3zkg5",
+          "record_type": "orthogonal multiplex IF dataset"
+        },
+        {
+          "provider": "GitHub",
+          "accession": "shaochwu/atera_project",
+          "url": "https://github.com/shaochwu/atera_project",
+          "record_type": "analysis code repository"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "10x Xenium output, supplemental and input files",
+          "url": "https://www.10xgenomics.com/datasets/xenium-ffpe-human-breast-biomarkers",
+          "link_type": "dataset_download_page",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": null,
+          "http_status": 200
+        },
+        {
+          "label": "Laser-microdissected-region WGS (BioProject PRJNA1509685)",
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1509685",
+          "link_type": "repository",
+          "resource_role": "related_validation_data",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "Adjacent-section multiplex IF in TissueViewer",
+          "url": "https://tissueviewer.com/link/m3zkg5",
+          "link_type": "visualization",
+          "resource_role": "related_validation_data",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "Atera comparison analysis code",
+          "url": "https://github.com/shaochwu/atera_project",
+          "link_type": "repository",
+          "resource_role": "analysis_code",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-19",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "expression_matrix",
+        "spatial_coordinates",
+        "cell_metadata",
+        "run_metadata",
+        "histology_image",
+        "gene_panel"
+      ],
+      "evidence_count": 8,
+      "verification": "partial",
+      "sample_records": [
+        {
+          "accession": "S1-Top",
+          "title": "S1-Top",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: IDC",
+            "tumor staging: T3 N0 M0",
+            "grade: G3",
+            "hormone status: HER2-Neg"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S1-Middle",
+          "title": "S1-Middle",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: DCIS",
+            "tumor staging: T2 N0 M0",
+            "grade: G2",
+            "hormone status: ER+/PR+/HER2-2+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S1-Bottom",
+          "title": "S1-Bottom",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: DCIS",
+            "tumor staging: T1c N0 M0",
+            "grade: G3",
+            "hormone status: HER2-1+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S2-Top",
+          "title": "S2-Top",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: Normal",
+            "tumor staging: NA (Normal)",
+            "grade: NA",
+            "hormone status: HER2-Neg"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S2-Middlle",
+          "title": "S2-Middlle",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: DCIS",
+            "tumor staging: T1c N1 MX",
+            "grade: G2",
+            "hormone status: HER2-2+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S2-Bottom",
+          "title": "S2-Bottom",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: DCIS",
+            "tumor staging: Tis NX MX",
+            "grade: G3",
+            "hormone status: HER2-3+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S3-Top",
+          "title": "S3-Top",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: CCH/DCIS",
+            "tumor staging: Tis N0",
+            "grade: G2",
+            "hormone status: ER+/PR+/HER2-1+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S3-Middle",
+          "title": "S3-Middle",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: DCIS",
+            "tumor staging: T4b N3a M1",
+            "grade: G2",
+            "hormone status: ER+/PR+/HER2-2+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S3-Bottom",
+          "title": "S3-Bottom",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: DCIS",
+            "tumor staging: TX NX M0",
+            "grade: G2",
+            "hormone status: ER-/PR-/HER2-2+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S4-Top",
+          "title": "S4-Top",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: IDC",
+            "tumor staging: Tis NX MX",
+            "grade: G3",
+            "hormone status: ER+/PR+/HER2-1+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S4-Middle",
+          "title": "S4-Middle",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: IDC",
+            "tumor staging: T2 N0 MX",
+            "grade: Not provided",
+            "hormone status: ER+/PR+/HER2-2+"
+          ],
+          "files": []
+        },
+        {
+          "accession": "S4-Bottom",
+          "title": "S4-Bottom",
+          "organism": "Homo sapiens",
+          "characteristics": [
+            "disease: DCIS",
+            "tumor staging: T4a N2a",
+            "grade: G3",
+            "hormone status: HER2-1+"
+          ],
+          "files": []
+        }
+      ],
+      "annotations": [
+        {
+          "label": "Cohort and sample counting",
+          "value": "The official page lists 12 sections: 8 DCIS, 3 IDC and 1 normal. Samples=12 counts sections listed by the provider; donor independence across all sections was not established and must not be assumed.",
+          "status": "partial",
+          "evidence_url": "https://www.10xgenomics.com/datasets/xenium-ffpe-human-breast-biomarkers"
+        },
+        {
+          "label": "Atera study subset",
+          "value": "The 2026 Atera comparison paper uses only S1-Bottom from this 12-section dataset. S1-Bottom is grade-3 DCIS, stage T1c N0 M0, HER2-1+, with 254,480 detected cells and 117,652,311 high-quality decoded transcripts on the provider page.",
+          "status": "verified",
+          "evidence_url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2"
+        },
+        {
+          "label": "Matched-block relationship",
+          "value": "S1-Bottom and the public Atera section were generated from the same tissue block approximately 100 micrometres apart. The Xenium Prime 5K comparison section was from a different patient.",
+          "status": "verified",
+          "evidence_url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2"
+        },
+        {
+          "label": "Orthogonal validation resources",
+          "value": "The same study links WGS from 16 laser-microdissected regions (PRJNA1509685), adjacent-section multiplex IF and analysis code. These linked resources are not counted among the 12 Xenium sections.",
+          "status": "verified",
+          "evidence_url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2"
+        },
+        {
+          "label": "Verification limits",
+          "value": "Provider metadata, the 12-row biomaterial table and publication associations were reviewed. Large output bundles, checksums, donor deduplication and cross-section registration were not independently validated.",
+          "status": "partial",
+          "evidence_url": "https://www.10xgenomics.com/datasets/xenium-ffpe-human-breast-biomarkers"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-19",
+        "source_status": "retrieved",
+        "source_count": 6,
+        "classification_status": "sample_metadata_checked",
+        "sample_status": "sample_metadata_checked",
+        "sample_detail": "All 12 provider-listed sections were transcribed from the official biomaterials table. The paper-specific analysis subset is S1-Bottom only.",
+        "file_status": "manifest_only",
+        "verified_files": 0,
+        "file_detail": "Output-bundle contents are described by the provider, but individual files, archive contents and checksums were not inspected.",
+        "findings": [
+          "The 12 sections must not be interpreted as 12 proven independent donors.",
+          "The Atera comparison uses S1-Bottom only, not all 12 sections.",
+          "WGS and multiplex IF are related validation assays and not additional Xenium samples."
+        ],
+        "evidence_urls": [
+          "https://www.10xgenomics.com/datasets/xenium-ffpe-human-breast-biomarkers",
+          "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+          "https://www.biorxiv.org/content/10.64898/2025.12.08.692193v1",
+          "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1509685",
+          "https://tissueviewer.com/link/m3zkg5",
+          "https://github.com/shaochwu/atera_project"
+        ]
+      },
+      "aliases": [
+        "ds_atera2026_xenium280_breast_biomarkers",
+        "xenium-ffpe-human-breast-biomarkers",
+        "Xenium 280 breast biomarkers",
+        "S1-Bottom"
+      ],
+      "original_labels": {
+        "disease": "IDC, DCIS, CCH/DCIS and Normal",
+        "disease_type": "Breast cancer",
+        "disease_category": "Cancer",
+        "tissue": "Human breast FFPE",
+        "condition_classes": [
+          "tumor",
+          "healthy_normal"
+        ],
+        "modalities": [
+          "Spatial transcriptomics"
+        ]
+      }
+    },
+    {
+      "id": "ds_sc_resource_cz_cellxgene_discover",
+      "canonical_group_id": "cg_cz_cellxgene_discover",
+      "campaign_id": "SINGLE-CELL-RESOURCES-2026-10-21",
+      "module": "single-cell",
+      "title": "CZ CELLxGENE Discover — single-cell dataset portal",
+      "accession": "CZ CELLxGENE Discover",
+      "technology": "Multi-study single-cell data portal",
+      "platform_family": "Multiple single-cell platforms",
+      "platform_assay": "Single-cell and single-nucleus transcriptomics",
+      "platform_version": null,
+      "organism": "Multiple species",
+      "tissue": "Multiple tissues",
+      "disease": "Multiple conditions",
+      "disease_category": "Mixed",
+      "disease_type": "Unspecified",
+      "disease_types": [
+        "Unspecified"
+      ],
+      "disease_subtypes": [],
+      "tissues": [
+        "Multiple tissues"
+      ],
+      "condition_classes": [],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "data_portal",
+      "source": "Chan Zuckerberg CELL by GENE",
+      "updated": "2026-10-21",
+      "description": "Search and download portal for many independently submitted single-cell datasets. This is a resource-level entry, not one biological cohort; its studies must be curated separately and must not be counted together as independent samples. The catalog already links selected CELLxGENE-hosted HTAPP datasets.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "CZ CELLxGENE Discover",
+          "accession": "Datasets",
+          "url": "https://cellxgene.cziscience.com/datasets",
+          "record_type": "dataset directory"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Browse and download CELLxGENE datasets",
+          "url": "https://cellxgene.cziscience.com/datasets",
+          "link_type": "dataset_download_page",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-21",
+          "size_bytes": null,
+          "http_status": 200
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Scope",
+          "value": "Directory-level entry. Dataset counts and content change over time; no platform-wide sample or file count is assigned.",
+          "status": "verified",
+          "evidence_url": "https://cellxgene.cziscience.com/datasets"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-21",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "resource_scope_checked",
+        "sample_status": "not_applicable",
+        "sample_detail": "A portal is not a cohort.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Individual hosted datasets were not enumerated or downloaded for this resource entry.",
+        "findings": [],
+        "evidence_urls": [
+          "https://cellxgene.cziscience.com/datasets"
+        ]
+      },
+      "aliases": [
+        "CELLxGENE",
+        "CZ CELLxGENE Discover",
+        "cellxgene.cziscience.com"
+      ],
+      "original_labels": {
+        "disease": "multiple conditions",
+        "disease_type": "multiple conditions",
+        "disease_category": "mixed",
+        "tissue": "multiple tissues",
+        "condition_classes": [],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      },
+      "source_candidate_id": "ds_sc_resource_cz_cellxgene_discover"
+    },
+    {
+      "id": "ds_sc_resource_human_vascular_cell_atlas",
+      "canonical_group_id": "cg_human_vascular_cell_atlas_2024",
+      "campaign_id": "SINGLE-CELL-RESOURCES-2026-10-21",
+      "module": "single-cell",
+      "title": "Human Vascular Cell Atlas — cross-organ scRNA-seq reference",
+      "accession": "Human Vascular Cell Atlas 2024",
+      "technology": "Integrated scRNA-seq",
+      "platform_family": "Multiple single-cell platforms",
+      "platform_assay": "Single-cell RNA sequencing",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "19 organs and tissues",
+      "disease": "Human vascular reference",
+      "disease_category": "Healthy / reference",
+      "disease_type": "Healthy / reference",
+      "disease_types": [
+        "Healthy / reference"
+      ],
+      "disease_subtypes": [],
+      "tissues": [
+        "Multiple tissues"
+      ],
+      "condition_classes": [
+        "healthy_normal"
+      ],
+      "specimen_types": [
+        "human organ and tissue samples"
+      ],
+      "samples": null,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "integrated_atlas",
+      "source": "Human Vascular Cell Atlas / Wellcome Sanger Institute",
+      "updated": "2026-10-21",
+      "description": "Integrated atlas of 66,623 vascular cells from 62 donors across 19 human organs and tissues, defining 42 endothelial and mural cell states. Donor and cell totals describe the atlas, not a verified count of downloadable files or independent biological specimens. The site also offers companion Visium data, which are not counted as a separate single-cell cohort here.",
+      "publications": [
+        {
+          "title": "An organotypic atlas of human vascular cells",
+          "year": 2024,
+          "journal": "Nature Medicine",
+          "corresponding_authors": [],
+          "pmid": null,
+          "doi": "10.1038/s41591-024-03376-x",
+          "url": "https://doi.org/10.1038/s41591-024-03376-x",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "The atlas site names this publication and links its DOI."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Human Vascular Cell Atlas",
+          "accession": "Human Vascular Cell Atlas 2024",
+          "url": "https://www.vascularcellatlas.org/index.html",
+          "record_type": "study data portal"
+        },
+        {
+          "provider": "ENA",
+          "accession": "ERP165258",
+          "url": "https://www.ebi.ac.uk/ena/browser/view/ERP165258",
+          "record_type": "generated sequencing data"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Integrated vascular-cell AnnData object",
+          "url": "https://cellgeni.cog.sanger.ac.uk/vasculature/vas_for_cxg_240904.h5ad",
+          "link_type": "direct_file",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-21",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "Atlas data and interactive viewer",
+          "url": "https://www.vascularcellatlas.org/index.html#data",
+          "link_type": "dataset_download_page",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-21",
+          "size_bytes": null,
+          "http_status": 200
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "processed_expression_object",
+        "cell_annotations",
+        "sample_metadata"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Atlas scope",
+          "value": "The source reports 66,623 vascular cells, 62 donors and 19 organs or tissues. These are not file or specimen counts.",
+          "status": "verified",
+          "evidence_url": "https://www.vascularcellatlas.org/index.html"
+        },
+        {
+          "label": "File verification",
+          "value": "The source page exposes an H5AD link, but the object was not downloaded or inspected.",
+          "status": "partial",
+          "evidence_url": "https://www.vascularcellatlas.org/index.html"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-21",
+        "source_status": "retrieved",
+        "source_count": 2,
+        "classification_status": "study_scope_checked",
+        "sample_status": "summary_only",
+        "sample_detail": "62 donors and 66,623 cells reported by the source; per-file sample mapping unverified.",
+        "file_status": "link_only",
+        "verified_files": 0,
+        "file_detail": "No H5AD contents or checksums inspected.",
+        "findings": [
+          "Published atlas integrates data across studies; donor and cell totals must not be summed with component datasets."
+        ],
+        "evidence_urls": [
+          "https://www.vascularcellatlas.org/index.html",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11645277/"
+        ]
+      },
+      "aliases": [
+        "Human Vascular Cell Atlas",
+        "Vascular Cell Atlas",
+        "vascularcellatlas.org"
+      ],
+      "original_labels": {
+        "disease": "human vascular reference",
+        "disease_type": "healthy and reference vascular cells",
+        "disease_category": "reference",
+        "tissue": "19 human organs and tissues",
+        "condition_classes": [
+          "healthy_normal"
+        ],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      },
+      "source_candidate_id": "ds_sc_resource_human_vascular_cell_atlas"
+    },
+    {
+      "id": "ds_sc_resource_tabula_sapiens",
+      "canonical_group_id": "cg_tabula_sapiens",
+      "campaign_id": "SINGLE-CELL-RESOURCES-2026-10-21",
+      "module": "single-cell",
+      "title": "Tabula Sapiens — multi-organ human single-cell atlas",
+      "accession": "Tabula Sapiens 1.0 / 2.0",
+      "technology": "Droplet and plate-based scRNA-seq",
+      "platform_family": "10x Chromium / Smart-seq2",
+      "platform_assay": "Single-cell RNA sequencing",
+      "platform_version": "1.0 and 2.0 releases",
+      "organism": "Homo sapiens",
+      "tissue": "28 organs and tissues",
+      "disease": "Healthy human reference",
+      "disease_category": "Healthy / reference",
+      "disease_type": "Healthy / reference",
+      "disease_types": [
+        "Healthy / reference"
+      ],
+      "disease_subtypes": [],
+      "tissues": [
+        "Multiple tissues"
+      ],
+      "condition_classes": [
+        "healthy_normal"
+      ],
+      "specimen_types": [
+        "human organ and tissue samples"
+      ],
+      "samples": null,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "atlas_portal",
+      "source": "Tabula Sapiens Consortium / CZ Biohub",
+      "updated": "2026-10-21",
+      "description": "Portal for the Tabula Sapiens 1.0 and 2.0 human single-cell atlas releases. The 2.0 release integrates more than 1.1 million cells from 28 organs or tissues and 24 normal donors, including the 1.0 material; the two versions must not be added as independent cohorts. The atlas is available for interactive exploration through CZ CELLxGENE.",
+      "publications": [
+        {
+          "title": "The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans",
+          "year": 2022,
+          "journal": "Science",
+          "corresponding_authors": [],
+          "pmid": null,
+          "doi": "10.1126/science.abl4896",
+          "url": "https://doi.org/10.1126/science.abl4896",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "Official Tabula Sapiens portal identifies this as the 1.0 publication."
+        },
+        {
+          "title": "Tabula Sapiens reveals transcription factor expression, senescence effects, and sex-specific features in cell types from 28 human organs and tissues",
+          "year": 2024,
+          "journal": "bioRxiv",
+          "corresponding_authors": [],
+          "pmid": null,
+          "doi": "10.1101/2024.12.03.626516",
+          "url": "https://doi.org/10.1101/2024.12.03.626516",
+          "publication_status": "preprint",
+          "association_evidence": "Official Tabula Sapiens portal identifies this as the 2.0 preprint."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "Tabula Sapiens",
+          "accession": "Tabula Sapiens 1.0 / 2.0",
+          "url": "https://tabula-sapiens.sf.czbiohub.org/about",
+          "record_type": "atlas release portal"
+        },
+        {
+          "provider": "CZ CELLxGENE Discover",
+          "accession": "Tabula Sapiens",
+          "url": "https://cellxgene.cziscience.com/collections/e5f58829-1a66-40b5-a624-9046778e74f5",
+          "record_type": "atlas collection"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Explore the complete Tabula Sapiens atlas",
+          "url": "https://cellxgene.cziscience.com/e/53d208b0-2cfd-4366-9866-c3c6114081bc.cxg/",
+          "link_type": "visualization",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-21",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "Tabula Sapiens release and access information",
+          "url": "https://tabula-sapiens.sf.czbiohub.org/about",
+          "link_type": "documentation",
+          "resource_role": "study_reference",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-21",
+          "size_bytes": null,
+          "http_status": 200
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "processed_expression_object",
+        "cell_annotations",
+        "sample_metadata"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Version relationship",
+          "value": "Release 2.0 includes the earlier 1.0 donors and tissues; 1.0 and 2.0 are not independent cohorts.",
+          "status": "verified",
+          "evidence_url": "https://tabula-sapiens.sf.czbiohub.org/about"
+        },
+        {
+          "label": "File verification",
+          "value": "Atlas and CELLxGENE viewer pages were reviewed; individual release files, checksums and sample mapping were not verified.",
+          "status": "partial",
+          "evidence_url": "https://tabula-sapiens.sf.czbiohub.org/"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-21",
+        "source_status": "retrieved",
+        "source_count": 2,
+        "classification_status": "release_scope_checked",
+        "sample_status": "summary_only",
+        "sample_detail": "2.0 source reports 24 donors and more than 1.1 million cells; donor-level mapping to release files not checked.",
+        "file_status": "link_only",
+        "verified_files": 0,
+        "file_detail": "No data files downloaded or checksummed.",
+        "findings": [
+          "1.0 data are contained within the 2.0 release and must not be summed separately."
+        ],
+        "evidence_urls": [
+          "https://tabula-sapiens.sf.czbiohub.org/about",
+          "https://tabula-sapiens.sf.czbiohub.org/"
+        ]
+      },
+      "aliases": [
+        "Tabula Sapiens",
+        "Tabula Sapiens 2.0",
+        "Tabula Sapiens Consortium",
+        "tabula-sapiens.sf.czbiohub.org"
+      ],
+      "original_labels": {
+        "disease": "normal human subjects",
+        "disease_type": "normal human reference",
+        "disease_category": "healthy",
+        "tissue": "28 human organs and tissues",
+        "condition_classes": [
+          "healthy_normal"
+        ],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      },
+      "source_candidate_id": "ds_sc_resource_tabula_sapiens"
     }
   ],
-  "generated_at": "2026-09-18T02:17:19Z"
+  "generated_at": "2026-10-22T01:45:31Z"
 }
