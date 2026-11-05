@@ -52,6 +52,12 @@
       "published_at": "2026-09-17"
     },
     {
+      "batch_id": "CLINICAL-OUTCOME-2026-11-05",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "dataset_count": 40,
+      "published_at": "2026-11-05"
+    },
+    {
       "batch_id": "HEART-XENIUM-2026-10-22",
       "campaign_id": "HEART-XENIUM-2026-10-22",
       "dataset_count": 2,
@@ -21770,6 +21776,4159 @@
       }
     },
     {
+      "id": "ds_clinical_outcome_included_02",
+      "source_candidate_id": "included-02",
+      "canonical_group_id": "cg_clinical_outcome_included_02",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "HCC — Wu et al., Zenodo 19123188",
+      "accession": "19123188",
+      "technology": "Visium + CODEX",
+      "platform_family": "Visium + CODEX",
+      "platform_assay": "Visium + CODEX",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Liver",
+      "tissues": [
+        "Liver"
+      ],
+      "disease": "HCC",
+      "disease_category": "Cancer",
+      "disease_type": "Liver cancer",
+      "disease_types": [
+        "Liver cancer"
+      ],
+      "disease_subtypes": [
+        "Hepatocellular carcinoma"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": 22,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (included): Reported 5 R / 6 NR. 22 Visium sections; metadata.csv contains patient, treatment, and response fields; individual labels should be rechecked. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Wu et al., Zenodo 19123188",
+          "url": "https://zenodo.org/records/19123188"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Wu et al., Zenodo 19123188",
+          "url": "https://zenodo.org/records/19123188",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "open_direct",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "Zenodo patient, treatment and response metadata.csv",
+          "url": "https://zenodo.org/records/19123188/files/metadata.csv?download=1",
+          "link_type": "direct_file",
+          "resource_role": "clinical_metadata",
+          "access_level": "open_direct",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics",
+        "Spatial proteomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "19123188",
+        "Wu et al., Zenodo 19123188"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Included. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/19123188"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Reported 5 R / 6 NR. 22 Visium sections; metadata.csv contains patient, treatment, and response fields; individual labels should be rechecked.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/19123188"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "22 Visium sections; metadata.csv contains patient, treatment, and response fields; individual labels should be rechecked."
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/19123188"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_included_03",
+      "source_candidate_id": "included-03",
+      "canonical_group_id": "cg_clinical_outcome_included_03",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "BCC — GSE291246",
+      "accession": "GSE291246",
+      "technology": "Xenium, custom 480-gene panel",
+      "platform_family": "Xenium, custom 480-gene panel",
+      "platform_assay": "Xenium, custom 480-gene panel",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Skin",
+      "tissues": [
+        "Skin"
+      ],
+      "disease": "BCC",
+      "disease_category": "Cancer",
+      "disease_type": "Basal cell carcinoma",
+      "disease_types": [
+        "Basal cell carcinoma"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": 35,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (included): 2 R / 4 NR. Historical anti-PD-1 response matched across related papers; 35 sections, not independent patients. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE291246",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291246"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE291246",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291246",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "open_direct",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE291246"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Included. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291246"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "2 R / 4 NR. Historical anti-PD-1 response matched across related papers; 35 sections, not independent patients.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291246"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Historical anti-PD-1 response matched across related papers; 35 sections, not independent patients."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291246"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_included_04",
+      "source_candidate_id": "included-04",
+      "canonical_group_id": "cg_clinical_outcome_included_04",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "CRC — GSE326101",
+      "accession": "GSE326101",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Colorectal",
+      "tissues": [
+        "Colorectal"
+      ],
+      "disease": "CRC",
+      "disease_category": "Cancer",
+      "disease_type": "Colorectal cancer",
+      "disease_types": [
+        "Colorectal cancer"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": 8,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (included): 4 R / 3 NR. Patient mapping recovered from official source-data workbook. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE326101",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326101"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE326101",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326101",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "open_direct",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE326101"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Included. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326101"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "4 R / 3 NR. Patient mapping recovered from official source-data workbook.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326101"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Patient mapping recovered from official source-data workbook."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326101"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_included_05",
+      "source_candidate_id": "included-05",
+      "canonical_group_id": "cg_clinical_outcome_included_05",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "NSCLC — GSE292299",
+      "accession": "GSE292299",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Lung",
+      "tissues": [
+        "Lung"
+      ],
+      "disease": "NSCLC",
+      "disease_category": "Cancer",
+      "disease_type": "Lung cancer",
+      "disease_types": [
+        "Lung cancer"
+      ],
+      "disease_subtypes": [
+        "NSCLC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": 16,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (included): 12 R / 4 NR; PFS months. 16 pretreatment NSCLC spatial samples are part of an 18-sample GEO series that also includes two DLBCL samples. Tissue sites differ across response groups; PFS event indicator is not established. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE292299",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292299"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE292299",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292299",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "open_direct",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE292299"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Included. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292299"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "12 R / 4 NR; PFS months. 16 pretreatment NSCLC spatial samples are part of an 18-sample GEO series that also includes two DLBCL samples. Tissue sites differ across response groups; PFS event indicator is not established.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292299"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "16 pretreatment NSCLC spatial samples are part of an 18-sample GEO series that also includes two DLBCL samples. Tissue sites differ across response groups; PFS event indicator is not established."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292299"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_included_06",
+      "source_candidate_id": "included-06",
+      "canonical_group_id": "cg_clinical_outcome_included_06",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "PDAC — GSE313662",
+      "accession": "GSE313662",
+      "technology": "Xenium 5K",
+      "platform_family": "Xenium 5K",
+      "platform_assay": "Xenium 5K",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Pancreas",
+      "tissues": [
+        "Pancreas"
+      ],
+      "disease": "PDAC",
+      "disease_category": "Cancer",
+      "disease_type": "Pancreatic cancer",
+      "disease_types": [
+        "Pancreatic cancer"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": 6,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (included): CAP grade 1: 1; grade 2: 5; recurrence/follow-up. Post-treatment surgical specimens; no grade 3 comparator. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE313662",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313662"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE313662",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313662",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "open_direct",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE313662"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Included. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313662"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "CAP grade 1: 1; grade 2: 5; recurrence/follow-up. Post-treatment surgical specimens; no grade 3 comparator.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313662"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Post-treatment surgical specimens; no grade 3 comparator."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313662"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_01",
+      "source_candidate_id": "needs_check-01",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_01",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Ovarian — GSE344584",
+      "accession": "GSE344584",
+      "technology": "Xenium",
+      "platform_family": "Xenium",
+      "platform_assay": "Xenium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Ovary",
+      "tissues": [
+        "Ovary"
+      ],
+      "disease": "Ovarian",
+      "disease_category": "Cancer",
+      "disease_type": "Ovarian cancer",
+      "disease_types": [
+        "Ovarian cancer"
+      ],
+      "disease_subtypes": [
+        "Ovarian"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": 8,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Best response, PFS, OS. The GEO series contains Xenium samples from 8 trial subjects, while the clinical trial enrolled 50 women. Spatial-subset outcome labels, event indicators and image/file inventory need checking. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE344584",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE344584"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE344584",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE344584",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE344584"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE344584"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Best response, PFS, OS. The GEO series contains Xenium samples from 8 trial subjects, while the clinical trial enrolled 50 women. Spatial-subset outcome labels, event indicators and image/file inventory need checking.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE344584"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "The GEO series contains Xenium samples from 8 trial subjects, while the clinical trial enrolled 50 women. Spatial-subset outcome labels, event indicators and image/file inventory need checking."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE344584"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_02",
+      "source_candidate_id": "needs_check-02",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_02",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Ovarian / HGSOC — GSE263920",
+      "accession": "GSE263920",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Ovary",
+      "tissues": [
+        "Ovary"
+      ],
+      "disease": "Ovarian / HGSOC",
+      "disease_category": "Cancer",
+      "disease_type": "Ovarian cancer",
+      "disease_types": [
+        "Ovarian cancer"
+      ],
+      "disease_subtypes": [
+        "Ovarian / HGSOC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": 8,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): 5 recurrent / 3 nonrecurrent. Eight GSM files and patient mapping Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE263920",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263920"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE263920",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263920",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE263920"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263920"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "5 recurrent / 3 nonrecurrent. Eight GSM files and patient mapping",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263920"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Eight GSM files and patient mapping"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263920"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_03",
+      "source_candidate_id": "needs_check-03",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_03",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Ovarian — GSE284100",
+      "accession": "GSE284100",
+      "technology": "Visium; CODEX/GeoMx",
+      "platform_family": "Visium; CODEX/GeoMx",
+      "platform_assay": "Visium; CODEX/GeoMx",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Ovary",
+      "tissues": [
+        "Ovary"
+      ],
+      "disease": "Ovarian",
+      "disease_category": "Cancer",
+      "disease_type": "Ovarian cancer",
+      "disease_types": [
+        "Ovarian cancer"
+      ],
+      "disease_subtypes": [
+        "Ovarian"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": 4,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): MRD, PFS, OS. GEO lists Visium samples from 4 MRD-positive cases; the 95-patient clinical cohort must not be treated as 95 spatial patients. Individual spatial patient outcomes remain to be mapped. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE284100",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284100"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE284100",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284100",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics",
+        "Spatial proteomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE284100"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284100"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "MRD, PFS, OS. GEO lists Visium samples from 4 MRD-positive cases; the 95-patient clinical cohort must not be treated as 95 spatial patients. Individual spatial patient outcomes remain to be mapped.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284100"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "GEO lists Visium samples from 4 MRD-positive cases; the 95-patient clinical cohort must not be treated as 95 spatial patients. Individual spatial patient outcomes remain to be mapped."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284100"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_04",
+      "source_candidate_id": "needs_check-04",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_04",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Ovarian — GSE274657",
+      "accession": "GSE274657",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Ovary",
+      "tissues": [
+        "Ovary"
+      ],
+      "disease": "Ovarian",
+      "disease_category": "Cancer",
+      "disease_type": "Ovarian cancer",
+      "disease_types": [
+        "Ovarian cancer"
+      ],
+      "disease_subtypes": [
+        "Ovarian"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Platinum resistance. Clinical platinum sensitivity vs JAK1-based sampling Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE274657",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274657"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE274657",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274657",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE274657"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274657"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Platinum resistance. Clinical platinum sensitivity vs JAK1-based sampling",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274657"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Clinical platinum sensitivity vs JAK1-based sampling"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274657"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_05",
+      "source_candidate_id": "needs_check-05",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_05",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Ovarian / HGSOC — Helsinki PFI study",
+      "accession": "Helsinki PFI study",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Ovary",
+      "tissues": [
+        "Ovary"
+      ],
+      "disease": "Ovarian / HGSOC",
+      "disease_category": "Cancer",
+      "disease_type": "Ovarian cancer",
+      "disease_types": [
+        "Ovarian cancer"
+      ],
+      "disease_subtypes": [
+        "Ovarian / HGSOC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Study publication",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): 8 short vs 8 long platinum-free interval. Public matrices and images Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Study publication",
+          "record_type": "study reference",
+          "accession": "Helsinki PFI study",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0893395224000887"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Helsinki PFI study",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0893395224000887",
+          "link_type": "study_reference",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "Helsinki PFI study"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0893395224000887"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "8 short vs 8 long platinum-free interval. Public matrices and images",
+          "status": "partial",
+          "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0893395224000887"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Public matrices and images"
+        ],
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0893395224000887"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_06",
+      "source_candidate_id": "needs_check-06",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_06",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Breast — T-DXd Zenodo 18603620, 18603623, 18603637, 18604238",
+      "accession": "18603620",
+      "technology": "Visium HD",
+      "platform_family": "Visium HD",
+      "platform_assay": "Visium HD",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "tissues": [
+        "Breast"
+      ],
+      "disease": "Breast",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "disease_types": [
+        "Breast cancer"
+      ],
+      "disease_subtypes": [
+        "Breast"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Sensitive / resistant. Tissue-to-patient response mapping, download inventory Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "T-DXd Zenodo 18603620",
+          "url": "https://zenodo.org/records/18603620"
+        },
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "18603623",
+          "url": "https://zenodo.org/records/18603623"
+        },
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "18603637",
+          "url": "https://zenodo.org/records/18603637"
+        },
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "18604238",
+          "url": "https://zenodo.org/records/18604238"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "T-DXd Zenodo 18603620",
+          "url": "https://zenodo.org/records/18603620",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "18603623",
+          "url": "https://zenodo.org/records/18603623",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "18603637",
+          "url": "https://zenodo.org/records/18603637",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "18604238",
+          "url": "https://zenodo.org/records/18604238",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 4,
+      "verification": "partial",
+      "aliases": [
+        "18603620",
+        "T-DXd Zenodo 18603620, 18603623, 18603637, 18604238",
+        "T-DXd Zenodo 18603620",
+        "18603623",
+        "18603637",
+        "18604238"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/18603620"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Sensitive / resistant. Tissue-to-patient response mapping, download inventory",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/18603620"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 4,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Tissue-to-patient response mapping, download inventory"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/18603620",
+          "https://zenodo.org/records/18603623",
+          "https://zenodo.org/records/18603637",
+          "https://zenodo.org/records/18604238"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_07",
+      "source_candidate_id": "needs_check-07",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_07",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Breast — ESPERO 21429819, 21432027",
+      "accession": "21429819",
+      "technology": "Visium HD",
+      "platform_family": "Visium HD",
+      "platform_assay": "Visium HD",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "tissues": [
+        "Breast"
+      ],
+      "disease": "Breast",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "disease_types": [
+        "Breast cancer"
+      ],
+      "disease_subtypes": [
+        "Breast"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Trial outcomes. Patient labels and cohort independence Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "ESPERO 21429819",
+          "url": "https://zenodo.org/records/21429819"
+        },
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "21432027",
+          "url": "https://zenodo.org/records/21432027"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "ESPERO 21429819",
+          "url": "https://zenodo.org/records/21429819",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "21432027",
+          "url": "https://zenodo.org/records/21432027",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 2,
+      "verification": "partial",
+      "aliases": [
+        "21429819",
+        "ESPERO 21429819, 21432027",
+        "ESPERO 21429819",
+        "21432027"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/21429819"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Trial outcomes. Patient labels and cohort independence",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/21429819"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 2,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Patient labels and cohort independence"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/21429819",
+          "https://zenodo.org/records/21432027"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_08",
+      "source_candidate_id": "needs_check-08",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_08",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "NSCLC — GSE288758",
+      "accession": "GSE288758",
+      "technology": "Visium HD",
+      "platform_family": "Visium HD",
+      "platform_assay": "Visium HD",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Lung",
+      "tissues": [
+        "Lung"
+      ],
+      "disease": "NSCLC",
+      "disease_category": "Cancer",
+      "disease_type": "Lung cancer",
+      "disease_types": [
+        "Lung cancer"
+      ],
+      "disease_subtypes": [
+        "NSCLC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Early resistance / short / long response. Spatial regions to patient IDs Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE288758",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288758"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE288758",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288758",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE288758"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288758"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Early resistance / short / long response. Spatial regions to patient IDs",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288758"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Spatial regions to patient IDs"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288758"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_09",
+      "source_candidate_id": "needs_check-09",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_09",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "NSCLC — GSE301973",
+      "accession": "GSE301973",
+      "technology": "Visium HD",
+      "platform_family": "Visium HD",
+      "platform_assay": "Visium HD",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Lung",
+      "tissues": [
+        "Lung"
+      ],
+      "disease": "NSCLC",
+      "disease_category": "Cancer",
+      "disease_type": "Lung cancer",
+      "disease_types": [
+        "Lung cancer"
+      ],
+      "disease_subtypes": [
+        "NSCLC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Osimertinib resistance. Patient outcomes; overlap with GSE288758 Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE301973",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301973"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE301973",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301973",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE301973"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301973"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Osimertinib resistance. Patient outcomes; overlap with GSE288758",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301973"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Patient outcomes; overlap with GSE288758"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301973"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_10",
+      "source_candidate_id": "needs_check-10",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_10",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Glioma — GSE302502",
+      "accession": "GSE302502",
+      "technology": "Xenium",
+      "platform_family": "Xenium",
+      "platform_assay": "Xenium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Brain",
+      "tissues": [
+        "Brain"
+      ],
+      "disease": "Glioma",
+      "disease_category": "Cancer",
+      "disease_type": "Brain cancer",
+      "disease_types": [
+        "Brain cancer"
+      ],
+      "disease_subtypes": [
+        "Glioma"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): TLS-associated prognosis. Survival mapping for spatial subset Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE302502",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302502"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE302502",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302502",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE302502"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302502"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "TLS-associated prognosis. Survival mapping for spatial subset",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302502"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Survival mapping for spatial subset"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302502"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_11",
+      "source_candidate_id": "needs_check-11",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_11",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "GBM — Zenodo 20709378",
+      "accession": "20709378",
+      "technology": "Xenium + Visium",
+      "platform_family": "Xenium + Visium",
+      "platform_assay": "Xenium + Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Brain",
+      "tissues": [
+        "Brain"
+      ],
+      "disease": "GBM",
+      "disease_category": "Cancer",
+      "disease_type": "Brain cancer",
+      "disease_types": [
+        "Brain cancer"
+      ],
+      "disease_subtypes": [
+        "GBM"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Possible OS/PFS. Clinical records and event status Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 20709378",
+          "url": "https://zenodo.org/records/20709378"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 20709378",
+          "url": "https://zenodo.org/records/20709378",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "20709378",
+        "Zenodo 20709378"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/20709378"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Possible OS/PFS. Clinical records and event status",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/20709378"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Clinical records and event status"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/20709378"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_12",
+      "source_candidate_id": "needs_check-12",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_12",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Glioma / GBM — Zenodo 18380571",
+      "accession": "18380571",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Brain",
+      "tissues": [
+        "Brain"
+      ],
+      "disease": "Glioma / GBM",
+      "disease_category": "Cancer",
+      "disease_type": "Brain cancer",
+      "disease_types": [
+        "Brain cancer"
+      ],
+      "disease_subtypes": [
+        "Glioma / GBM"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Possible survival/recurrence. Patient conversion table and outcome data Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 18380571",
+          "url": "https://zenodo.org/records/18380571"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 18380571",
+          "url": "https://zenodo.org/records/18380571",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "18380571",
+        "Zenodo 18380571"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/18380571"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Possible survival/recurrence. Patient conversion table and outcome data",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/18380571"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Patient conversion table and outcome data"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/18380571"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_13",
+      "source_candidate_id": "needs_check-13",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_13",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Brain metastases — GSE325935",
+      "accession": "GSE325935",
+      "technology": "Xenium + Visium",
+      "platform_family": "Xenium + Visium",
+      "platform_assay": "Xenium + Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Brain",
+      "tissues": [
+        "Brain"
+      ],
+      "disease": "Brain metastases",
+      "disease_category": "Cancer",
+      "disease_type": "Unspecified",
+      "disease_types": [
+        "Unspecified"
+      ],
+      "disease_subtypes": [
+        "Brain metastases"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Survival-associated interactions. Survival outcomes from actual spatial patients Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE325935",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325935"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE325935",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325935",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE325935"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325935"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Survival-associated interactions. Survival outcomes from actual spatial patients",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325935"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Survival outcomes from actual spatial patients"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325935"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_14",
+      "source_candidate_id": "needs_check-14",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_14",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Melanoma — GSE300445",
+      "accession": "GSE300445",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Skin",
+      "tissues": [
+        "Skin"
+      ],
+      "disease": "Melanoma",
+      "disease_category": "Cancer",
+      "disease_type": "Melanoma",
+      "disease_types": [
+        "Melanoma"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Relapse / relapse-free. ADJIII-0019, -0022, -0013, -0133 mapping Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE300445",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300445"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE300445",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300445",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE300445"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300445"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Relapse / relapse-free. ADJIII-0019, -0022, -0013, -0133 mapping",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300445"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "ADJIII-0019, -0022, -0013, -0133 mapping"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300445"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_15",
+      "source_candidate_id": "needs_check-15",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_15",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Melanoma — Zenodo 19586163",
+      "accession": "19586163",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Skin",
+      "tissues": [
+        "Skin"
+      ],
+      "disease": "Melanoma",
+      "disease_category": "Cancer",
+      "disease_type": "Melanoma",
+      "disease_types": [
+        "Melanoma"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): ICI response in associated study. D993, D2816, D2989, D2398 identity/response Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 19586163",
+          "url": "https://zenodo.org/records/19586163"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 19586163",
+          "url": "https://zenodo.org/records/19586163",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "19586163",
+        "Zenodo 19586163"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/19586163"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "ICI response in associated study. D993, D2816, D2989, D2398 identity/response",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/19586163"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "D993, D2816, D2989, D2398 identity/response"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/19586163"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_17",
+      "source_candidate_id": "needs_check-17",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_17",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "PDAC — GSE310352",
+      "accession": "GSE310352",
+      "technology": "CosMx",
+      "platform_family": "CosMx",
+      "platform_assay": "CosMx",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Pancreas",
+      "tissues": [
+        "Pancreas"
+      ],
+      "disease": "PDAC",
+      "disease_category": "Cancer",
+      "disease_type": "Pancreatic cancer",
+      "disease_types": [
+        "Pancreatic cancer"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Potential clinical outcomes. Spatial patient outcome records Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE310352",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310352"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE310352",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310352",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE310352"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310352"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Potential clinical outcomes. Spatial patient outcome records",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310352"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Spatial patient outcome records"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310352"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_18",
+      "source_candidate_id": "needs_check-18",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_18",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "CRC — Zenodo 19043057, GSE294385",
+      "accession": "19043057",
+      "technology": "Visium HD + Visium",
+      "platform_family": "Visium HD + Visium",
+      "platform_assay": "Visium HD + Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Colorectal",
+      "tissues": [
+        "Colorectal"
+      ],
+      "disease": "CRC",
+      "disease_category": "Cancer",
+      "disease_type": "Colorectal cancer",
+      "disease_types": [
+        "Colorectal cancer"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): MRD, DFS, resistance. Original spatial patients vs external validation remain unresolved. The relationship between Zenodo 19043057 and the existing GSE294385 catalog record has not been independently confirmed. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 19043057",
+          "url": "https://zenodo.org/records/19043057"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 19043057",
+          "url": "https://zenodo.org/records/19043057",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "19043057",
+        "Zenodo 19043057, GSE294385",
+        "Zenodo 19043057"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/19043057"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "MRD, DFS, resistance. Original spatial patients vs external validation remain unresolved. The relationship between Zenodo 19043057 and the existing GSE294385 catalog record has not been independently confirmed.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/19043057"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Original spatial patients vs external validation remain unresolved. The relationship between Zenodo 19043057 and the existing GSE294385 catalog record has not been independently confirmed."
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/19043057"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_19",
+      "source_candidate_id": "needs_check-19",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_19",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Bladder / MIBC — Mendeley hrtj23vgfb",
+      "accession": "hrtj23vgfb",
+      "technology": "Visium HD + Xenium",
+      "platform_family": "Visium HD + Xenium",
+      "platform_assay": "Visium HD + Xenium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Bladder",
+      "tissues": [
+        "Bladder"
+      ],
+      "disease": "Bladder / MIBC",
+      "disease_category": "Cancer",
+      "disease_type": "Bladder cancer",
+      "disease_types": [
+        "Bladder cancer"
+      ],
+      "disease_subtypes": [
+        "Bladder / MIBC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Mendeley Data",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): ICB resistance. Spatial patient-response mapping and files Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Mendeley Data",
+          "record_type": "repository record",
+          "accession": "Mendeley hrtj23vgfb",
+          "url": "https://data.mendeley.com/datasets/hrtj23vgfb/2"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Mendeley hrtj23vgfb",
+          "url": "https://data.mendeley.com/datasets/hrtj23vgfb/2",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "hrtj23vgfb",
+        "Mendeley hrtj23vgfb"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://data.mendeley.com/datasets/hrtj23vgfb/2"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "ICB resistance. Spatial patient-response mapping and files",
+          "status": "partial",
+          "evidence_url": "https://data.mendeley.com/datasets/hrtj23vgfb/2"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Spatial patient-response mapping and files"
+        ],
+        "evidence_urls": [
+          "https://data.mendeley.com/datasets/hrtj23vgfb/2"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_20",
+      "source_candidate_id": "needs_check-20",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_20",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Bladder / MIBC — Cancer Discovery 2026",
+      "accession": "Cancer Discovery 2026",
+      "technology": "Visium + Xenium 5K",
+      "platform_family": "Visium + Xenium 5K",
+      "platform_assay": "Visium + Xenium 5K",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Bladder",
+      "tissues": [
+        "Bladder"
+      ],
+      "disease": "Bladder / MIBC",
+      "disease_category": "Cancer",
+      "disease_type": "Bladder cancer",
+      "disease_types": [
+        "Bladder cancer"
+      ],
+      "disease_subtypes": [
+        "Bladder / MIBC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Study publication",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): 5 pathological R / 17 NR. Public processed data and patient mapping Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Study publication",
+          "record_type": "study reference",
+          "accession": "Cancer Discovery 2026",
+          "url": "https://doi.org/10.1158/2159-8290.CD-26-0099"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Cancer Discovery 2026",
+          "url": "https://doi.org/10.1158/2159-8290.CD-26-0099",
+          "link_type": "study_reference",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "Cancer Discovery 2026"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1158/2159-8290.CD-26-0099"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "5 pathological R / 17 NR. Public processed data and patient mapping",
+          "status": "partial",
+          "evidence_url": "https://doi.org/10.1158/2159-8290.CD-26-0099"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Public processed data and patient mapping"
+        ],
+        "evidence_urls": [
+          "https://doi.org/10.1158/2159-8290.CD-26-0099"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_21",
+      "source_candidate_id": "needs_check-21",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_21",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "ccRCC — GSE273952",
+      "accession": "GSE273952",
+      "technology": "Platform unverified",
+      "platform_family": "Platform unverified",
+      "platform_assay": "Platform unverified",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Kidney",
+      "tissues": [
+        "Kidney"
+      ],
+      "disease": "ccRCC",
+      "disease_category": "Cancer",
+      "disease_type": "Kidney cancer",
+      "disease_types": [
+        "Kidney cancer"
+      ],
+      "disease_subtypes": [
+        "ccRCC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): BIONIKK ICI response. Spatial technology, matrix, patient labels Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE273952",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273952"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE273952",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273952",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE273952"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273952"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "BIONIKK ICI response. Spatial technology, matrix, patient labels",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273952"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Spatial technology, matrix, patient labels"
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273952"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_22",
+      "source_candidate_id": "needs_check-22",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_22",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "SCLC — Zenodo 21614171",
+      "accession": "21614171",
+      "technology": "ROI profiling",
+      "platform_family": "ROI profiling",
+      "platform_assay": "ROI profiling",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Lung",
+      "tissues": [
+        "Lung"
+      ],
+      "disease": "SCLC",
+      "disease_category": "Cancer",
+      "disease_type": "Lung cancer",
+      "disease_types": [
+        "Lung cancer"
+      ],
+      "disease_subtypes": [
+        "SCLC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): PFS, DSS, OS. May lack continuous spatial coordinates Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 21614171",
+          "url": "https://zenodo.org/records/21614171"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 21614171",
+          "url": "https://zenodo.org/records/21614171",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "21614171",
+        "Zenodo 21614171"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/21614171"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "PFS, DSS, OS. May lack continuous spatial coordinates",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/21614171"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "May lack continuous spatial coordinates"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/21614171"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_needs_check_23",
+      "source_candidate_id": "needs_check-23",
+      "canonical_group_id": "cg_clinical_outcome_needs_check_23",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "OCCC — Zenodo 17212542, 15378232",
+      "accession": "17212542",
+      "technology": "Xenium 5K + Visium",
+      "platform_family": "Xenium 5K + Visium",
+      "platform_assay": "Xenium 5K + Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Ovary",
+      "tissues": [
+        "Ovary"
+      ],
+      "disease": "OCCC",
+      "disease_category": "Cancer",
+      "disease_type": "Ovarian cancer",
+      "disease_types": [
+        "Ovarian cancer"
+      ],
+      "disease_subtypes": [
+        "OCCC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (needs check): Clinical case history. Too few patients for comparative outcome analysis Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 17212542",
+          "url": "https://zenodo.org/records/17212542"
+        },
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "15378232",
+          "url": "https://zenodo.org/records/15378232"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 17212542",
+          "url": "https://zenodo.org/records/17212542",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "15378232",
+          "url": "https://zenodo.org/records/15378232",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 2,
+      "verification": "partial",
+      "aliases": [
+        "17212542",
+        "Zenodo 17212542, 15378232",
+        "Zenodo 17212542",
+        "15378232"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Needs Check. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/17212542"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Clinical case history. Too few patients for comparative outcome analysis",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/17212542"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 2,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Too few patients for comparative outcome analysis"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/17212542",
+          "https://zenodo.org/records/15378232"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_restricted_01",
+      "source_candidate_id": "restricted-01",
+      "canonical_group_id": "cg_clinical_outcome_restricted_01",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "TNBC — Yan et al., Nature 2026, sharing instructions",
+      "accession": "Yan et al.",
+      "technology": "Xenium 5K / Visium HD / Visium",
+      "platform_family": "Xenium 5K / Visium HD / Visium",
+      "platform_assay": "Xenium 5K / Visium HD / Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "tissues": [
+        "Breast"
+      ],
+      "disease": "TNBC",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "disease_types": [
+        "Breast cancer"
+      ],
+      "disease_subtypes": [
+        "TNBC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "restricted",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Study publication",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (restricted): pCR / residual disease; 44 Xenium patients reported. Spatial data via author request Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Study publication",
+          "record_type": "study reference",
+          "accession": "Yan et al., Nature 2026",
+          "url": "https://www.nature.com/articles/s41586-026-10469-9"
+        },
+        {
+          "provider": "GitHub",
+          "record_type": "repository record",
+          "accession": "sharing instructions",
+          "url": "https://github.com/navinlabcode/tnbc-chemo/blob/main/data/README.md"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Yan et al., Nature 2026",
+          "url": "https://www.nature.com/articles/s41586-026-10469-9",
+          "link_type": "study_reference",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "sharing instructions",
+          "url": "https://github.com/navinlabcode/tnbc-chemo/blob/main/data/README.md",
+          "link_type": "study_reference",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 2,
+      "verification": "partial",
+      "aliases": [
+        "Yan et al.",
+        "Yan et al., Nature 2026, sharing instructions",
+        "Yan et al., Nature 2026",
+        "sharing instructions"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Restricted. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.nature.com/articles/s41586-026-10469-9"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "pCR / residual disease; 44 Xenium patients reported. Spatial data via author request",
+          "status": "partial",
+          "evidence_url": "https://www.nature.com/articles/s41586-026-10469-9"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 2,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Spatial data via author request"
+        ],
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41586-026-10469-9",
+          "https://github.com/navinlabcode/tnbc-chemo/blob/main/data/README.md"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_restricted_02",
+      "source_candidate_id": "restricted-02",
+      "canonical_group_id": "cg_clinical_outcome_restricted_02",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Breast — Seo et al., Zenodo 14039854",
+      "accession": "14039854",
+      "technology": "CosMx",
+      "platform_family": "CosMx",
+      "platform_assay": "CosMx",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "tissues": [
+        "Breast"
+      ],
+      "disease": "Breast",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "disease_types": [
+        "Breast cancer"
+      ],
+      "disease_subtypes": [
+        "Breast"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "restricted",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (restricted): Residual disease / distant relapse. Restricted Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Seo et al., Zenodo 14039854",
+          "url": "https://zenodo.org/records/14039854"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Seo et al., Zenodo 14039854",
+          "url": "https://zenodo.org/records/14039854",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "14039854",
+        "Seo et al., Zenodo 14039854"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Restricted. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/14039854"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Residual disease / distant relapse. Restricted",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/14039854"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Restricted"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/14039854"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_restricted_03",
+      "source_candidate_id": "restricted-03",
+      "canonical_group_id": "cg_clinical_outcome_restricted_03",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Breast — TLS/HEV atlas, Zenodo 18917100",
+      "accession": "18917100",
+      "technology": "Visium / HD / Xenium",
+      "platform_family": "Visium / HD / Xenium",
+      "platform_assay": "Visium / HD / Xenium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "tissues": [
+        "Breast"
+      ],
+      "disease": "Breast",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "disease_types": [
+        "Breast cancer"
+      ],
+      "disease_subtypes": [
+        "Breast"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "restricted",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (restricted): Not verified. Restricted; expected release previously reported for December 2026 Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "TLS/HEV atlas, Zenodo 18917100",
+          "url": "https://zenodo.org/records/18917100"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "TLS/HEV atlas, Zenodo 18917100",
+          "url": "https://zenodo.org/records/18917100",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "18917100",
+        "TLS/HEV atlas, Zenodo 18917100"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Restricted. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/18917100"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Not verified. Restricted; expected release previously reported for December 2026",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/18917100"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Restricted; expected release previously reported for December 2026"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/18917100"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_restricted_04",
+      "source_candidate_id": "restricted-04",
+      "canonical_group_id": "cg_clinical_outcome_restricted_04",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Gastric — Tashireva et al., 2025",
+      "accession": "Tashireva et al.",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Stomach",
+      "tissues": [
+        "Stomach"
+      ],
+      "disease": "Gastric",
+      "disease_category": "Cancer",
+      "disease_type": "Gastric cancer",
+      "disease_types": [
+        "Gastric cancer"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "restricted",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (restricted): Mandard TRG, 5 R / 11 NR in clinical cohort. Spatial data on request; spatial subset unclear Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "Tashireva et al., 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12293087/"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Tashireva et al., 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12293087/",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "Tashireva et al.",
+        "Tashireva et al., 2025"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Restricted. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12293087/"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Mandard TRG, 5 R / 11 NR in clinical cohort. Spatial data on request; spatial subset unclear",
+          "status": "partial",
+          "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12293087/"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Spatial data on request; spatial subset unclear"
+        ],
+        "evidence_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12293087/"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_restricted_05",
+      "source_candidate_id": "restricted-05",
+      "canonical_group_id": "cg_clinical_outcome_restricted_05",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "CRC — STT0000036, article",
+      "accession": "STT0000036",
+      "technology": "Stereo-seq",
+      "platform_family": "Stereo-seq",
+      "platform_assay": "Stereo-seq",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Colorectal",
+      "tissues": [
+        "Colorectal"
+      ],
+      "disease": "CRC",
+      "disease_category": "Cancer",
+      "disease_type": "Colorectal cancer",
+      "disease_types": [
+        "Colorectal cancer"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "restricted",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + CNGBdb",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (restricted): 6 spatial treatment patients: dCR 3, dPR 1, dSD 2. Processed matrix download not confirmed; OMIX004739 unavailable Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "CNGBdb",
+          "record_type": "repository record",
+          "accession": "STT0000036",
+          "url": "https://db.cngb.org/stomics/project/STT0000036"
+        },
+        {
+          "provider": "Study publication",
+          "record_type": "study reference",
+          "accession": "article",
+          "url": "https://www.nature.com/articles/s41467-024-54710-3"
+        },
+        {
+          "provider": "Study publication",
+          "record_type": "study reference",
+          "accession": "OMIX004739",
+          "url": "https://ngdc.cncb.ac.cn/omix/release/OMIX004739"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "STT0000036",
+          "url": "https://db.cngb.org/stomics/project/STT0000036",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "article",
+          "url": "https://www.nature.com/articles/s41467-024-54710-3",
+          "link_type": "study_reference",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "OMIX004739",
+          "url": "https://ngdc.cncb.ac.cn/omix/release/OMIX004739",
+          "link_type": "study_reference",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 3,
+      "verification": "partial",
+      "aliases": [
+        "STT0000036",
+        "STT0000036, article",
+        "article",
+        "OMIX004739"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Restricted. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://db.cngb.org/stomics/project/STT0000036"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "6 spatial treatment patients: dCR 3, dPR 1, dSD 2. Processed matrix download not confirmed; OMIX004739 unavailable",
+          "status": "partial",
+          "evidence_url": "https://db.cngb.org/stomics/project/STT0000036"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 3,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Processed matrix download not confirmed; OMIX004739 unavailable"
+        ],
+        "evidence_urls": [
+          "https://db.cngb.org/stomics/project/STT0000036",
+          "https://www.nature.com/articles/s41467-024-54710-3",
+          "https://ngdc.cncb.ac.cn/omix/release/OMIX004739"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_restricted_06",
+      "source_candidate_id": "restricted-06",
+      "canonical_group_id": "cg_clinical_outcome_restricted_06",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Ovarian — Zenodo 22746547",
+      "accession": "22746547",
+      "technology": "To verify",
+      "platform_family": "To verify",
+      "platform_assay": "To verify",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Ovary",
+      "tissues": [
+        "Ovary"
+      ],
+      "disease": "Ovarian",
+      "disease_category": "Cancer",
+      "disease_type": "Ovarian cancer",
+      "disease_types": [
+        "Ovarian cancer"
+      ],
+      "disease_subtypes": [
+        "Ovarian"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "restricted",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (restricted): Early recurrence. Restricted Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 22746547",
+          "url": "https://zenodo.org/records/22746547"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 22746547",
+          "url": "https://zenodo.org/records/22746547",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "22746547",
+        "Zenodo 22746547"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Restricted. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/22746547"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "Early recurrence. Restricted",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/22746547"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Restricted"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/22746547"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_restricted_07",
+      "source_candidate_id": "restricted-07",
+      "canonical_group_id": "cg_clinical_outcome_restricted_07",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "ccRCC — Zenodo 20402498",
+      "accession": "20402498",
+      "technology": "Xenium 5K",
+      "platform_family": "Xenium 5K",
+      "platform_assay": "Xenium 5K",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Kidney",
+      "tissues": [
+        "Kidney"
+      ],
+      "disease": "ccRCC",
+      "disease_category": "Cancer",
+      "disease_type": "Kidney cancer",
+      "disease_types": [
+        "Kidney cancer"
+      ],
+      "disease_subtypes": [
+        "ccRCC"
+      ],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "restricted",
+      "availability_grade": "C",
+      "dataset_origin": "clinical_outcome_inventory",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (restricted): To verify. Embargoed, previously reported through 2030 Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 20402498",
+          "url": "https://zenodo.org/records/20402498"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 20402498",
+          "url": "https://zenodo.org/records/20402498",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "restricted",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "20402498",
+        "Zenodo 20402498"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Restricted. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/20402498"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "To verify. Embargoed, previously reported through 2030",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/20402498"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Embargoed, previously reported through 2030"
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/20402498"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_benchmark_01",
+      "source_candidate_id": "benchmark-01",
+      "canonical_group_id": "cg_clinical_outcome_benchmark_01",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Ovarian, breast, prostate, lung adenocarcinoma — SpatialFusion",
+      "accession": "20934900",
+      "technology": "Xenium / Visium HD",
+      "platform_family": "Xenium / Visium HD",
+      "platform_assay": "Xenium / Visium HD",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Ovary",
+      "tissues": [
+        "Ovary"
+      ],
+      "disease": "Ovarian, breast, prostate, lung adenocarcinoma",
+      "disease_category": "Cancer",
+      "disease_type": "Ovarian cancer",
+      "disease_types": [
+        "Ovarian cancer"
+      ],
+      "disease_subtypes": [
+        "Ovarian, breast, prostate, lung adenocarcinoma"
+      ],
+      "condition_classes": [],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "method_benchmark",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (benchmark): No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 20934900",
+          "url": "https://zenodo.org/records/20934900"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 20934900",
+          "url": "https://zenodo.org/records/20934900",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "2026-11-05",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "20934900",
+        "SpatialFusion",
+        "Zenodo 20934900"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Benchmark. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/20934900"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/20934900"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Public method benchmark; clinical outcome linkage has not been established."
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/20934900"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_benchmark_02",
+      "source_candidate_id": "benchmark-02",
+      "canonical_group_id": "cg_clinical_outcome_benchmark_02",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Bladder, breast, CRC, lung, lymphoma, ovarian — Cross-platform atlas",
+      "accession": "17999961",
+      "technology": "Visium / Visium HD",
+      "platform_family": "Visium / Visium HD",
+      "platform_assay": "Visium / Visium HD",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Bladder",
+      "tissues": [
+        "Bladder"
+      ],
+      "disease": "Bladder, breast, CRC, lung, lymphoma, ovarian",
+      "disease_category": "Cancer",
+      "disease_type": "Bladder cancer",
+      "disease_types": [
+        "Bladder cancer"
+      ],
+      "disease_subtypes": [
+        "Bladder, breast, CRC, lung, lymphoma, ovarian"
+      ],
+      "condition_classes": [],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "method_benchmark",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (benchmark): No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 17999961",
+          "url": "https://zenodo.org/records/17999961"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 17999961",
+          "url": "https://zenodo.org/records/17999961",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "17999961",
+        "Cross-platform atlas",
+        "Zenodo 17999961"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Benchmark. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/17999961"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/17999961"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Public method benchmark; clinical outcome linkage has not been established."
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/17999961"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_benchmark_03",
+      "source_candidate_id": "benchmark-03",
+      "canonical_group_id": "cg_clinical_outcome_benchmark_03",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Multiple cancers — Companion data",
+      "accession": "17986017",
+      "technology": "Xenium / CosMx",
+      "platform_family": "Xenium / CosMx",
+      "platform_assay": "Xenium / CosMx",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Multiple tissues",
+      "tissues": [
+        "Multiple tissues"
+      ],
+      "disease": "Multiple cancers",
+      "disease_category": "Cancer",
+      "disease_type": "Unspecified",
+      "disease_types": [
+        "Unspecified"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "method_benchmark",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (benchmark): No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 17986017",
+          "url": "https://zenodo.org/records/17986017"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 17986017",
+          "url": "https://zenodo.org/records/17986017",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "17986017",
+        "Companion data",
+        "Zenodo 17986017"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Benchmark. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/17986017"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/17986017"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Public method benchmark; clinical outcome linkage has not been established."
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/17986017"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_benchmark_04",
+      "source_candidate_id": "benchmark-04",
+      "canonical_group_id": "cg_clinical_outcome_benchmark_04",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Multiple cancers — Companion data",
+      "accession": "18000256",
+      "technology": "Xenium MT / 5K",
+      "platform_family": "Xenium MT / 5K",
+      "platform_assay": "Xenium MT / 5K",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Multiple tissues",
+      "tissues": [
+        "Multiple tissues"
+      ],
+      "disease": "Multiple cancers",
+      "disease_category": "Cancer",
+      "disease_type": "Unspecified",
+      "disease_types": [
+        "Unspecified"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "method_benchmark",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (benchmark): No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 18000256",
+          "url": "https://zenodo.org/records/18000256"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 18000256",
+          "url": "https://zenodo.org/records/18000256",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "18000256",
+        "Companion data",
+        "Zenodo 18000256"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Benchmark. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/18000256"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/18000256"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Public method benchmark; clinical outcome linkage has not been established."
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/18000256"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_benchmark_05",
+      "source_candidate_id": "benchmark-05",
+      "canonical_group_id": "cg_clinical_outcome_benchmark_05",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Breast — Breast Visium atlas",
+      "accession": "4739739",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Breast",
+      "tissues": [
+        "Breast"
+      ],
+      "disease": "Breast",
+      "disease_category": "Cancer",
+      "disease_type": "Breast cancer",
+      "disease_types": [
+        "Breast cancer"
+      ],
+      "disease_subtypes": [
+        "Breast"
+      ],
+      "condition_classes": [],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "method_benchmark",
+      "source": "Clinical outcome inventory + Zenodo",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (benchmark): No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "record_type": "repository record",
+          "accession": "Zenodo 4739739",
+          "url": "https://zenodo.org/records/4739739"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo 4739739",
+          "url": "https://zenodo.org/records/4739739",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "4739739",
+        "Breast Visium atlas",
+        "Zenodo 4739739"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Benchmark. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/4739739"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/4739739"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Public method benchmark; clinical outcome linkage has not been established."
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/4739739"
+        ]
+      }
+    },
+    {
+      "id": "ds_clinical_outcome_benchmark_06",
+      "source_candidate_id": "benchmark-06",
+      "canonical_group_id": "cg_clinical_outcome_benchmark_06",
+      "campaign_id": "CLINICAL-OUTCOME-2026-11-05",
+      "module": "spatial",
+      "title": "Gastric — Gastric TME",
+      "accession": "GSE251950",
+      "technology": "Visium",
+      "platform_family": "Visium",
+      "platform_assay": "Visium",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Stomach",
+      "tissues": [
+        "Stomach"
+      ],
+      "disease": "Gastric",
+      "disease_category": "Cancer",
+      "disease_type": "Gastric cancer",
+      "disease_types": [
+        "Gastric cancer"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [],
+      "specimen_types": [],
+      "samples": null,
+      "files": null,
+      "access": "unconfirmed",
+      "availability_grade": "C",
+      "dataset_origin": "method_benchmark",
+      "source": "Clinical outcome inventory + NCBI GEO",
+      "updated": "2026-11-05",
+      "description": "Clinical-outcome inventory (benchmark): No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established. Patient-level outcome mapping and spatial file contents were not independently revalidated for this catalog import.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "record_type": "repository record",
+          "accession": "GSE251950",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE251950"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE251950",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE251950",
+          "link_type": "dataset_download_page",
+          "resource_role": "source_landing_page",
+          "access_level": "unconfirmed",
+          "last_checked": "",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [],
+      "evidence_count": 1,
+      "verification": "partial",
+      "aliases": [
+        "GSE251950",
+        "Gastric TME"
+      ],
+      "annotations": [
+        {
+          "label": "Clinical outcome inventory status",
+          "value": "Benchmark. Status follows the supplied working inventory dated 2026-11-04; it is not a fresh end-to-end clinical audit.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE251950"
+        },
+        {
+          "label": "Outcome lead",
+          "value": "No verified patient-level outcome. Public method benchmark; clinical outcome linkage has not been established.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE251950"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-11-05",
+        "source_status": "inventory_only",
+        "source_count": 1,
+        "classification_status": "inventory_mapped",
+        "sample_status": "summary_only",
+        "sample_detail": "Patient and section counts follow the supplied inventory or primary repository summary; patient-to-outcome linkage was not independently reconstructed in this import.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Spatial expression and image files were not downloaded or checksum-verified in this import.",
+        "findings": [
+          "Public method benchmark; clinical outcome linkage has not been established."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE251950"
+        ]
+      }
+    },
+    {
       "id": "ds_heart_xenium_gse345643",
       "source_candidate_id": "GSE345643",
       "canonical_group_id": "cg_heart_xenium_gse345643",
@@ -30555,5 +34714,5 @@
       "source_candidate_id": "ds_sc_pancancer_tmeatlas_human_zenodo23029384"
     }
   ],
-  "generated_at": "2026-11-05T06:18:28Z"
+  "generated_at": "2026-11-05T06:50:57Z"
 }
