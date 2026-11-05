@@ -52,6 +52,12 @@
       "published_at": "2026-09-17"
     },
     {
+      "batch_id": "HEART-XENIUM-2026-10-22",
+      "campaign_id": "HEART-XENIUM-2026-10-22",
+      "dataset_count": 2,
+      "published_at": "2026-10-22"
+    },
+    {
       "batch_id": "SPATIALECOTYPER-2026-wave-001",
       "campaign_id": "SPATIALECOTYPER-2026",
       "dataset_count": 12,
@@ -104,6 +110,12 @@
       "campaign_id": "SINGLE-CELL-RESOURCES-2026-10-21",
       "dataset_count": 3,
       "published_at": "2026-10-21"
+    },
+    {
+      "batch_id": "PANCANCER-CAF-2026-10-22",
+      "campaign_id": "PANCANCER-CAF-2026-10-22",
+      "dataset_count": 2,
+      "published_at": "2026-10-22"
     }
   ],
   "datasets": [
@@ -21758,6 +21770,246 @@
       }
     },
     {
+      "id": "ds_heart_xenium_gse345643",
+      "source_candidate_id": "GSE345643",
+      "canonical_group_id": "cg_heart_xenium_gse345643",
+      "campaign_id": "HEART-XENIUM-2026-10-22",
+      "module": "spatial",
+      "title": "Human right ventricle progression atlas — Xenium",
+      "accession": "GSE345643",
+      "technology": "10x Xenium",
+      "platform_family": "Xenium",
+      "platform_assay": "Xenium Human Multi-Tissue and Cancer Panel + 100 custom probes",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Heart, right ventricle",
+      "tissues": [
+        "Heart",
+        "Right ventricle"
+      ],
+      "disease": "Non-failing, pressure-loaded and failing right ventricle",
+      "disease_category": "Cardiovascular disease",
+      "disease_type": "Cardiovascular disease; Healthy / reference",
+      "disease_types": [
+        "Cardiovascular disease",
+        "Healthy / reference"
+      ],
+      "disease_subtypes": [
+        "Pressure-loaded right ventricle",
+        "Failing right ventricle"
+      ],
+      "condition_classes": [
+        "healthy_normal",
+        "disease_non_tumor"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": 9,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "research_study",
+      "source": "GEO",
+      "updated": "2026-10-22",
+      "description": "Nine FFPE transmural right-ventricular sections from nine patients: three non-failing, three pressure-loaded but functionally preserved, and three failing. Six Xenium capture regions are represented by six GEO GSM records; several sections share a region. The measured panel has 477 genes (377 pre-designed plus 100 custom probes). GEO reports 625,305 cells before correction and 568,651 cells in the ambient-corrected analysis object. These cell and region counts are not biological sample counts. Raw and corrected matrices, cell metadata, transcript coordinates and morphology images are deposited; SpaGE-imputed genes are not deposited.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "GEO",
+          "accession": "GSE345643",
+          "record_type": "dataset record",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE345643"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GEO supplementary files and six capture-region samples",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE345643",
+          "link_type": "dataset_download_page",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-22",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "expression_matrix",
+        "sample_metadata",
+        "spatial_coordinates",
+        "histology_image"
+      ],
+      "evidence_count": 1,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Sample accounting",
+          "value": "9 patients and 9 tissue sections (3 non-failing, 3 pressure-loaded, 3 failing); 6 GEO GSM capture regions. Some regions contain sections from multiple patients. Do not interpret GSM count or cell count as biological sample count.",
+          "status": "verified",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE345643"
+        },
+        {
+          "label": "Matrix scope",
+          "value": "Both raw measured-panel counts and ambient-corrected counts are deposited. The corrected matrix has non-integer values; SpaGE-imputed genes are excluded. File contents and integrity have not been checked locally.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE345643"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-22",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "source_metadata_reviewed",
+        "sample_status": "source_metadata_reviewed",
+        "sample_detail": "GEO series metadata identifies 9 patients/sections and 6 capture regions.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "GEO file listing reviewed; files were not downloaded or byte-checked.",
+        "findings": [],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE345643"
+        ]
+      },
+      "aliases": [
+        "GSE345643",
+        "PRJNA1521415",
+        "right ventricle Xenium"
+      ],
+      "original_labels": {
+        "disease": "Non-failing; pressure-loaded preserved right ventricle; failing right ventricle",
+        "disease_type": "NF; pRV; RVF",
+        "disease_category": "cardiovascular disease",
+        "tissue": "right ventricle (transmural)",
+        "condition_classes": [
+          "healthy_normal",
+          "disease_non_tumor"
+        ],
+        "modalities": [
+          "Spatial transcriptomics"
+        ]
+      }
+    },
+    {
+      "id": "ds_heart_xenium_10x_hmulti_v1",
+      "source_candidate_id": "Xenium_V1_hHeart_nondiseased_section_FFPE",
+      "canonical_group_id": "cg_heart_xenium_10x_hmulti_v1",
+      "campaign_id": "HEART-XENIUM-2026-10-22",
+      "module": "spatial",
+      "title": "Human non-diseased heart — Xenium Human Multi-Tissue and Cancer Panel",
+      "accession": "Xenium_V1_hHeart_nondiseased_section_FFPE",
+      "technology": "10x Xenium",
+      "platform_family": "Xenium",
+      "platform_assay": "Xenium Human Multi-Tissue and Cancer Panel",
+      "platform_version": "Xenium Onboard Analysis 1.9.0",
+      "organism": "Homo sapiens",
+      "tissue": "Heart",
+      "tissues": [
+        "Heart"
+      ],
+      "disease": "Non-diseased heart",
+      "disease_category": "Healthy / Reference",
+      "disease_type": "Healthy / reference",
+      "disease_types": [
+        "Healthy / reference"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "healthy_normal"
+      ],
+      "specimen_types": [
+        "primary_tissue"
+      ],
+      "samples": 1,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "vendor_demo",
+      "source": "10x Genomics",
+      "updated": "2026-10-22",
+      "description": "One FFPE non-diseased adult human heart section from one donor, profiled with the pre-designed 377-gene Xenium Human Multi-Tissue and Cancer Panel. The 10x dataset page reports 26,366 detected cells; this is not the biological sample count. Output and supplemental files are accessible through the vendor dataset page. File contents and integrity have not been checked locally.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "10x Genomics",
+          "accession": "Xenium_V1_hHeart_nondiseased_section_FFPE",
+          "record_type": "dataset record",
+          "url": "https://www.10xgenomics.com/datasets/human-heart-data-xenium-human-multi-tissue-and-cancer-panel-1-standard"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "10x output and supplemental file download page",
+          "url": "https://www.10xgenomics.com/datasets/human-heart-data-xenium-human-multi-tissue-and-cancer-panel-1-standard",
+          "link_type": "dataset_download_page",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-22",
+          "size_bytes": null,
+          "http_status": 200
+        }
+      ],
+      "modalities": [
+        "Spatial transcriptomics"
+      ],
+      "file_roles": [
+        "expression_matrix",
+        "spatial_coordinates",
+        "histology_image"
+      ],
+      "evidence_count": 1,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Sample accounting",
+          "value": "1 donor and 1 tissue section; 26,366 detected cells are not independent samples.",
+          "status": "verified",
+          "evidence_url": "https://www.10xgenomics.com/datasets/human-heart-data-xenium-human-multi-tissue-and-cancer-panel-1-standard"
+        },
+        {
+          "label": "Access verification",
+          "value": "Official dataset page and metadata reviewed. Individual output bundle links and file contents have not been verified.",
+          "status": "partial",
+          "evidence_url": "https://www.10xgenomics.com/datasets/human-heart-data-xenium-human-multi-tissue-and-cancer-panel-1-standard"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-22",
+        "source_status": "retrieved",
+        "source_count": 1,
+        "classification_status": "source_metadata_reviewed",
+        "sample_status": "source_metadata_reviewed",
+        "sample_detail": "10x page states one sample and one donor.",
+        "file_status": "not_checked",
+        "verified_files": 0,
+        "file_detail": "Individual archives were not downloaded or byte-checked.",
+        "findings": [],
+        "evidence_urls": [
+          "https://www.10xgenomics.com/datasets/human-heart-data-xenium-human-multi-tissue-and-cancer-panel-1-standard"
+        ]
+      },
+      "aliases": [
+        "Xenium_V1_hHeart_nondiseased_section_FFPE",
+        "10x human heart Xenium",
+        "human-heart-data-xenium-human-multi-tissue-and-cancer-panel-1-standard"
+      ],
+      "original_labels": {
+        "disease": "healthy",
+        "disease_type": "non-diseased",
+        "disease_category": "healthy",
+        "tissue": "Heart",
+        "condition_classes": [
+          "healthy_normal"
+        ],
+        "modalities": [
+          "Spatial transcriptomics"
+        ]
+      }
+    },
+    {
       "id": "ds_ecotyper2026_gse135337",
       "source_candidate_id": "GSE135337",
       "canonical_group_id": "cg_gse135337",
@@ -29996,7 +30248,312 @@
         ]
       },
       "source_candidate_id": "ds_sc_resource_tabula_sapiens"
+    },
+    {
+      "id": "ds_sc_pancancer_caf_gse210347",
+      "canonical_group_id": "cg_pancancer_caf_gse210347",
+      "campaign_id": "PANCANCER-CAF-2026-10-22",
+      "module": "single-cell",
+      "title": "Pan-cancer CAF single-cell reanalysis — GSE210347",
+      "accession": "GSE210347",
+      "technology": "Integrated 10x Genomics scRNA-seq reanalysis",
+      "platform_family": "10x Genomics Chromium",
+      "platform_assay": "Single-cell RNA sequencing",
+      "platform_version": null,
+      "organism": "Homo sapiens",
+      "tissue": "Multiple solid-tumor tissues",
+      "tissues": [
+        "Multiple tissues"
+      ],
+      "disease": "Pan-cancer solid tumors",
+      "disease_category": "Pan-cancer",
+      "disease_type": "Breast cancer; Cholangiocarcinoma; Colorectal cancer; Gastric cancer; Lung cancer; Ovarian cancer; Pancreatic cancer; Prostate cancer; Bladder cancer; Thyroid cancer",
+      "disease_types": [
+        "Breast cancer",
+        "Cholangiocarcinoma",
+        "Colorectal cancer",
+        "Gastric cancer",
+        "Lung cancer",
+        "Ovarian cancer",
+        "Pancreatic cancer",
+        "Prostate cancer",
+        "Bladder cancer",
+        "Thyroid cancer"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor",
+        "adjacent_non_tumor",
+        "healthy_normal"
+      ],
+      "specimen_types": [
+        "primary_tissue",
+        "adjacent_tissue",
+        "normal_reference_tissue"
+      ],
+      "samples": null,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "third_party_reanalysis",
+      "source": "NCBI GEO",
+      "updated": "2026-10-22",
+      "description": "Cross-cancer single-cell reanalysis focused on cancer-associated fibroblasts, integrating published and in-house data from 10 solid cancer types. The paper reports 855,271 quality-controlled cells from 226 samples and 164 donors, including tumor, adjacent, and normal tissues. GSE210347 is a third-party reanalysis with a processed counts RDS, cell metadata, sample information, and study metadata; its component studies must not be counted again as independent cohorts. CAFs are annotated within the broader tumor microenvironment matrix rather than being the only deposited cells.",
+      "publications": [
+        {
+          "title": "Pan-cancer single-cell analysis reveals the heterogeneity and plasticity of cancer-associated fibroblasts in the tumor microenvironment",
+          "year": 2022,
+          "journal": "Nature Communications",
+          "corresponding_authors": [],
+          "pmid": "36333338",
+          "doi": "10.1038/s41467-022-34395-2",
+          "url": "https://doi.org/10.1038/s41467-022-34395-2",
+          "publication_status": "peer_reviewed",
+          "association_evidence": "The paper names GSE210347 as its integrated single-cell expression matrix, and the GEO Series cites the paper."
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "NCBI GEO",
+          "accession": "GSE210347",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210347",
+          "record_type": "third-party reanalysis dataset"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "GSE210347 processed counts RDS and annotation files",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210347",
+          "link_type": "dataset_download_page",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-22",
+          "size_bytes": null,
+          "http_status": null
+        },
+        {
+          "label": "Pan-cancer CAF atlas browser",
+          "url": "https://gist-fgl.github.io/sc-caf-atlas/",
+          "link_type": "visualization",
+          "resource_role": "study_reference",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-22",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "expression_matrix",
+        "cell_annotations",
+        "sample_metadata"
+      ],
+      "evidence_count": 2,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Reanalysis scope",
+          "value": "GEO classifies this as third-party reanalysis. The paper reports 226 analyzed samples from 164 donors across 10 cancer types; the GEO design text also mentions 232 input transcriptome samples before the paper's final filtering. Counts are source-reported and per-sample mapping was not independently checked.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210347"
+        },
+        {
+          "label": "Download inventory",
+          "value": "GEO lists GSE210347_counts.Rds.gz (2.4 GB), GSE210347_meta.txt.gz, GSE210347_sample_information.txt.gz and GSE210347_study_metadata.xls.gz. File contents and checksums were not inspected.",
+          "status": "partial",
+          "evidence_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210347"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-22",
+        "source_status": "retrieved",
+        "source_count": 2,
+        "classification_status": "source_metadata_reviewed",
+        "sample_status": "summary_only",
+        "sample_detail": "Publication reports 226 analyzed samples and 164 donors; GEO design lists more input samples, so samples is left null pending mapping.",
+        "file_status": "link_only",
+        "verified_files": 0,
+        "file_detail": "GEO file listing reviewed; matrices were not downloaded or checksummed.",
+        "findings": [
+          "Integrated reanalysis overlaps its component source studies and may overlap other pan-cancer atlases."
+        ],
+        "evidence_urls": [
+          "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210347",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636408/"
+        ]
+      },
+      "aliases": [
+        "PanCAF",
+        "GSE210347",
+        "pan-cancer CAF atlas"
+      ],
+      "original_labels": {
+        "disease": "10 common solid cancer types",
+        "disease_type": "pan-cancer",
+        "disease_category": "solid tumors",
+        "tissue": "primary tumor, adjacent and normal tissues",
+        "condition_classes": [
+          "tumor",
+          "adjacent_non_tumor",
+          "healthy_normal"
+        ],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      },
+      "source_candidate_id": "ds_sc_pancancer_caf_gse210347"
+    },
+    {
+      "id": "ds_sc_pancancer_tmeatlas_human_zenodo23029384",
+      "canonical_group_id": "cg_tmeatlas_zenodo23029384",
+      "campaign_id": "PANCANCER-CAF-2026-10-22",
+      "module": "single-cell",
+      "title": "TMEAtlas — human pan-cancer tumor microenvironment and CAF atlas",
+      "accession": "10.5281/zenodo.23029384 (human atlas)",
+      "technology": "Integrated multi-study scRNA-seq atlas",
+      "platform_family": "Multiple single-cell platforms",
+      "platform_assay": "Single-cell RNA sequencing",
+      "platform_version": "Zenodo v1",
+      "organism": "Homo sapiens",
+      "tissue": "Multiple solid-tumor tissues",
+      "tissues": [
+        "Multiple tissues"
+      ],
+      "disease": "Pan-cancer solid tumors",
+      "disease_category": "Pan-cancer",
+      "disease_type": "Unspecified",
+      "disease_types": [
+        "Unspecified"
+      ],
+      "disease_subtypes": [],
+      "condition_classes": [
+        "tumor"
+      ],
+      "specimen_types": [
+        "human solid-tumor samples"
+      ],
+      "samples": null,
+      "files": null,
+      "access": "open_direct",
+      "availability_grade": "C",
+      "dataset_origin": "integrated_atlas",
+      "source": "Stanford TMEAtlas / Zenodo",
+      "updated": "2026-10-22",
+      "description": "Human component of the TMEAtlas release, integrated from 190 human scRNA-seq studies. The portal reports about 12.8 million human cells from 2,855 samples and 328,877 annotated CAFs across solid cancers; CAFs are a subset of the full tumor microenvironment matrix. Zenodo's human manifest specifies 12,855,771 cells and 19,923 features, raw integer counts in split xz-compressed 10x HDF5, aligned cell metadata, barcodes, features, and embeddings. The same Zenodo record also contains a separate mouse atlas; its cells and samples are excluded from this human entry. This integrated resource can overlap GSE210347 and other component studies.",
+      "publications": [],
+      "source_records": [
+        {
+          "provider": "Zenodo",
+          "accession": "10.5281/zenodo.23029384",
+          "url": "https://zenodo.org/records/23029384",
+          "record_type": "integrated atlas release"
+        }
+      ],
+      "access_links": [
+        {
+          "label": "Zenodo human atlas files and split count matrix",
+          "url": "https://zenodo.org/records/23029384",
+          "link_type": "dataset_download_page",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-22",
+          "size_bytes": null,
+          "http_status": 200
+        },
+        {
+          "label": "Human manifest, cell order and reassembly checksums",
+          "url": "https://zenodo.org/records/23029384/files/MANIFEST_human.txt?download=1",
+          "link_type": "direct_file",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-22",
+          "size_bytes": null,
+          "http_status": 200
+        },
+        {
+          "label": "Human cell metadata CSV",
+          "url": "https://zenodo.org/records/23029384/files/tme_atlas_human_metadata.csv.gz?download=1",
+          "link_type": "direct_file",
+          "resource_role": "dataset_resource",
+          "access_level": "open_direct",
+          "last_checked": "2026-10-22",
+          "size_bytes": null,
+          "http_status": null
+        }
+      ],
+      "modalities": [
+        "Single-cell transcriptomics"
+      ],
+      "file_roles": [
+        "expression_matrix",
+        "cell_annotations",
+        "sample_metadata",
+        "embeddings"
+      ],
+      "evidence_count": 3,
+      "verification": "partial",
+      "annotations": [
+        {
+          "label": "Human versus mouse scope",
+          "value": "This record covers only the human atlas. Zenodo v1 includes both species and lists 33.9 GB of files in total; the human matrix is split across many parts. Do not sum the mouse cells with the human CAF count.",
+          "status": "verified",
+          "evidence_url": "https://zenodo.org/records/23029384"
+        },
+        {
+          "label": "Matrix handling",
+          "value": "The manifest reports 12,855,771 human cells, 19,923 genes and a 10x-format raw-count HDF5. Matrix columns match barcode, metadata and embedding row order. Reassembly checksum is published but was not checked locally.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/23029384/files/MANIFEST_human.txt?download=1"
+        },
+        {
+          "label": "Publication status",
+          "value": "The Zenodo record names 'Conservation of the Tumor Microenvironment across Organs and Species' as Nature 2026 in press; no article DOI was listed on 2026-10-22.",
+          "status": "partial",
+          "evidence_url": "https://zenodo.org/records/23029384"
+        }
+      ],
+      "validation_profile": {
+        "checked_at": "2026-10-22",
+        "source_status": "retrieved",
+        "source_count": 2,
+        "classification_status": "release_scope_checked",
+        "sample_status": "summary_only",
+        "sample_detail": "Portal reports 2,855 human samples and 328,877 CAFs; component study and donor mapping not checked.",
+        "file_status": "link_only",
+        "verified_files": 0,
+        "file_detail": "Zenodo listing and human manifest reviewed; large data files were not downloaded or checksummed.",
+        "findings": [
+          "This is a multi-study reanalysis; it may overlap GSE210347 and other catalog entries.",
+          "The release also includes mouse data, which are not part of this human record."
+        ],
+        "evidence_urls": [
+          "https://zenodo.org/records/23029384",
+          "https://zenodo.org/records/23029384/files/MANIFEST_human.txt?download=1",
+          "https://tmeatlas.stanford.edu/"
+        ]
+      },
+      "aliases": [
+        "TMEAtlas",
+        "Human TMEAtlas",
+        "Zenodo 23029384",
+        "pan-cancer CAF atlas"
+      ],
+      "original_labels": {
+        "disease": "42 solid cancers across human and mouse atlas",
+        "disease_type": "pan-cancer",
+        "disease_category": "solid tumors",
+        "tissue": "human solid-organ tumors",
+        "condition_classes": [
+          "tumor"
+        ],
+        "modalities": [
+          "Single-cell transcriptomics"
+        ]
+      },
+      "source_candidate_id": "ds_sc_pancancer_tmeatlas_human_zenodo23029384"
     }
   ],
-  "generated_at": "2026-10-22T01:45:31Z"
+  "generated_at": "2026-11-05T05:51:46Z"
 }
